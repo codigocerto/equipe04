@@ -22,3 +22,7 @@ Agradecemos a todos os nossos colaboradores e voluntários que tornam esta inici
   <img src="https://img.shields.io/badge/Contribua%20no-GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
 </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 30d7eef4c614d52cdca73c5a9b58f0a498cfd71e
