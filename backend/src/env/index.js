@@ -2,7 +2,13 @@ require('dotenv').config();
 const { z } = require('zod')
 
 const envSchema = z.object({
-  PORT: z.coerce.number().default(8000)
+  PORT: z.coerce.number().default(8000),
+
+  EMAILSERVICE: z.string(),
+  EMAILHOST: z.string(),
+  EMAILPORT: z.coerce.number(),
+  EMAILUSER: z.string(),
+  EMAILPASS: z.string(),
 })
 
 const _env = envSchema.safeParse(process.env)
