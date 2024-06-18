@@ -1,4 +1,7 @@
-function sendMail(emailTo, subject, message) {
+const env = require('../env')
+const nodemailer = require('nodemailer')
+
+function mailProvider(emailTo, subject, message) {
   let mailOptions = {
     from: env.EMAILUSER,
     to: emailTo,
@@ -27,4 +30,4 @@ function sendMail(emailTo, subject, message) {
   });
 }
 
-module.exports = sendMail
+module.exports = mailProvider

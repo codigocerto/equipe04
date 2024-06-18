@@ -27,7 +27,7 @@ model UserInfos {
   senioridade      String
   linkedin         String
   liderar          Boolean
-  experiencia      Int
+  experiencia      Int?    @default(0)
   user             Users   @relation(fields: [userId], references: [id])
   userId           Int     @unique
 

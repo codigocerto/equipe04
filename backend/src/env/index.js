@@ -3,6 +3,8 @@ const { z } = require('zod')
 
 const envSchema = z.object({
   PORT: z.coerce.number().default(8000),
+  
+  DATABASE_URL:z.string(),
 
   EMAILSERVICE: z.string(),
   EMAILHOST: z.string(),
