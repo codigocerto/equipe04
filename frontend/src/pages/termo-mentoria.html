@@ -12,6 +12,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!--BS ICONS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +29,7 @@
     <main class="term-wrapper">
       <nav class="nav-term">
         <a class="voltar" href="/"
-          ><img src="../assets/images/home/left-arrow.svg" />Voltar</a
+          ><i class="bi bi-chevron-left">Voltar</a
         >
       </nav>
 
@@ -44,7 +46,7 @@
           <div
             class="d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="../assets/images/home/1.black.svg" />
+            <i class="bi bi-1-circle-fill"></i>
             <p>
               Termo de<br />
               Consentimento
@@ -54,7 +56,7 @@
           <div
             class="d-flex flex-column justify-content-center align-items-center"
           >
-            <img src="../assets/images/home/2.white.svg" />
+            <i class="bi bi-2-circle"></i>
             <p>
               Dados <br />
               Pessoais
@@ -102,170 +104,152 @@
           </p>
         </div>
 
-        <button
-          onclick="openModal()"
-          id="openModal"
-          type="button"
-          class="btn btn-danger"
-        >
+        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#termoMentorModal">
           Termo de Responsabilidade
         </button>
       </section>
 
-      <!-- Inicio Modal -->
-
-      <section id="modal">
-        <h1>
-          Termos e condições para participar do projeto de simulação do Codigo
-          Certo.
-        </h1>
-        <p>
-          Este documento estabelece os termos e condições aplicáveis ao trabalho
-          voluntário no Projeto de Simulação Ágil. O voluntário concorda em
-          realizar suas atividades de maneira ética, responsável e em
-          conformidade com as leis e regulamentos aplicáveis. O voluntário se
-          compromete a contribuir com suas habilidades, conhecimentos e esforços
-          para o desenvolvimento e sucesso do projeto. O voluntariado neste
-          projeto não gera contrato de trabalho ou remuneração financeira. O
-          trabalho realizado é de caráter voluntário e não gera vínculo
-          empregatício. O voluntário concorda em respeitar as diretrizes e
-          orientações fornecidas pelos responsáveis pelo projeto, bem como os
-          prazos e metas estabelecidos. O voluntário deverá tratar todas as
-          informações e dados relacionados ao projeto como confidenciais e não
-          divulgá-los sem autorização prévia dos responsáveis. As regras sobre
-          divulgação de informações e dados do projeto estão relacionados no
-          anexo A deste documento. O voluntário concorda em cumprir as normas de
-          segurança e saúde ocupacional estabelecidas para o projeto, bem como
-          utilizar os equipamentos e recursos fornecidos de forma adequada. O
-          projeto pode ser interrompido, cancelado ou modificado a qualquer
-          momento pelos responsáveis, sem isso gerar direitos ou compensações ao
-          voluntário. O voluntário concorda em ceder os direitos de propriedade
-          intelectual sobre qualquer material, documento ou resultado produzido
-          durante o voluntariado ao projeto. Os responsáveis pelo projeto não se
-          responsabilizam por danos, lesões ou prejuízos causados ao voluntário
-          durante o exercício de suas atividades. O voluntário declara estar
-          ciente dos riscos envolvidos no trabalho voluntário e assume total
-          responsabilidade por sua segurança e bem-estar durante sua
-          participação no projeto. Este termo de voluntariado será regido pelas
-          leis do país em que o projeto está sendo realizado e qualquer disputa
-          relacionada a ele será resolvida pelos tribunais competentes. Ao
-          aceitar estes termos e condições, o voluntário declara estar ciente e
-          concordar com todas as disposições aqui estabelecidas, conforme
-          disposto no anexo B. Este termo de voluntariado será regido pelas leis
-          do país em que o projeto está sendo realizado e qualquer disputa
-          relacionada a ele será resolvida pelos tribunais competentes. Ao
-          aceitar estes termos e condições, a pessoa voluntária declara estar
-          ciente e concorda com todas as disposições aqui estabelecidas,
-          conforme disposto no anexo B. Anexo A Regras sobre confidencialidade e
-          direitos autorais do material produzido pelos grupos de voluntariado:
-          Plágio: A cópia direta ou parcial do material produzido por qualquer
-          equipe, sem dar crédito adequado ou permissão. Isso inclui texto,
-          imagens, vídeos, gráficos ou qualquer outro conteúdo criado pela
-          equipe original. Propriedade Intelectual: Todo o material criado por
-          qualquer equipe original é protegido por direitos autorais e
-          propriedade intelectual. Qualquer uso ou reprodução deste material sem
-          permissão é considerado plágio. Citação Adequada: Se uma equipe deseja
-          usar parte do material produzido por outra equipe, deve buscar a
-          permissão da equipe original e fornecer uma citação adequada. Isso
-          inclui citar a fonte, nomear os autores e fornecer todas as
-          informações necessárias para garantir que o crédito seja dado
-          corretamente. Autorização: É fundamental obter autorização por escrito
-          da equipe original antes de usar seu material de qualquer forma. Isso
-          inclui a reprodução ou adaptação do material para uso em outros
-          projetos, ou atividades. Consequências: O plágio é uma violação grave
-          da ética acadêmica e profissional. Se uma equipe for descoberta
-          plagiando material produzido por outra equipe, poderá enfrentar
-          consequências, como a desqualificação do trabalho voluntário na
-          iniciativa de simulação ágil ou ações legais. Originalidade: Cada
-          equipe é responsável por produzir seu próprio conteúdo original e não
-          deve recorrer ao plágio para obter sucesso ou reconhecimento. A
-          originalidade é um valor fundamental em qualquer projeto ou trabalho
-          voluntário. Portanto, é fundamental que todas as equipes envolvidas na
-          iniciativa de simulação ágil sejam transparentes, respeitem a
-          propriedade intelectual e evitem qualquer tipo de plágio de material
-          produzido por outras equipes. Isso garantirá a integridade do trabalho
-          voluntário e promoverá a criatividade e inovação em cada equipe. Anexo
-          B As regras da Iniciativa têm como objetivo garantir o bom
-          funcionamento do projeto e o envolvimento de pessoas comprometidas.
-          Aqui estão algumas diretrizes básicas: Ser maior de 18 anos; Ter
-          habilidades básicas de comunicação e trabalho em equipe; Querer
-          aprender e compartilhar conhecimentos; Respeitar as normas de conduta
-          e ética estabelecidas pelo iniciativa; Compromisso e responsabilidade
-          com as tarefas; Ter acesso a um computador ou celular e internet para
-          participar das reuniões e atividades online; Aceitar e respeitar a
-          diversidade de opiniões e culturas presentes no grupo da iniciativa.
-          Interesse e comprometimento: As pessoas da equipe devem estar
-          genuinamente interessados no projeto e comprometidos em contribuir com
-          seu tempo e habilidades para o sucesso do mesmo; Disponibilidade: É
-          importante que as pessoas tenham disponibilidade para participar das
-          reuniões e atividades do projeto. Embora seja um projeto voluntário, é
-          fundamental que todos possam dedicar algum tempo regularmente para o
-          progresso do trabalho, equipes inativas por mais de duas semanas terão
-          pessoas realocados ou poderão ser desfeitas, entenderemos que as
-          pessoas das mesmas não têm disponibilidade e daremos a oportunidade
-          para outras pessoas que realmente queiram participar; Diversidade de
-          habilidades: A equipe Multidisciplinar é composta por diferentes
-          profissionais, como um par de PO, SM, UX, UI, Dev Front-end, Dev
-          Back-end , Dev FullStack, cada um com suas habilidades e conhecimentos
-          específicos. Portanto, é importante que a equipe seja diversificada e
-          abrangente em termos de conhecimentos. Espera-se a participação de
-          pessoas das áreas de TI, gestão de projetos, análise de negócios,
-          design, entre outras; Respeito e colaboração: A comunicação e o
-          trabalho em equipe são essenciais para o sucesso do projeto. É
-          fundamental que todas as pessoas sejam respeitosas, colaborativas e
-          estejam dispostas a compartilhar ideias, ouvir os demais e trabalhar
-          juntas para alcançar os objetivos propostos; Compromisso com prazos: O
-          projeto terá metas e prazos a cumprir. É importante que as pessoas da
-          equipe se comprometam a entregar seu trabalho dentro dos prazos
-          estabelecidos, para que o projeto possa avançar de forma fluida;
-          Confidencialidade: Pode ser necessário lidar com informações
-          confidenciais. Nesses casos, é crucial a equipe respeite e mantenha
-          sigilo sobre as informações sensíveis que possam ter acesso.
-          Comunicação clara e frequente: Para garantir a coordenação e o
-          alinhamento entre a equipe, é fundamental manter uma comunicação clara
-          e frequente. Isso pode ser feito por meio de reuniões regulares,
-          trocas de e-mails, plataformas de comunicação, entre outros meios.
-          Essas são algumas regras básicas para participar da equipe
-          Multidisciplinar da iniciativa voluntária da Simulação do Codigo
-          Certo. Ágil. Outras regras e normas específicas podem ser
-          estabelecidas pela coordenação do projeto conforme a necessidade.
-        </p>
-
-        <div
-          class="d-flex justify-content-around align-items-center text-center"
-        >
-          <input
-            type="checkbox"
-            id="consultar-acervo"
-            data-id="consultar-acervo"
-            name="toggle"
-          />
-          <p class="nomeToogle">Li e concordo com os termos.</p>
-
-          <button
-            onclick="closeModal()"
-            id="closeModal"
-            type="button"
-            class="btn btn-secondary"
-          >
-            Fechar
-          </button>
-
-          <a
-            href="../../src/pages/form-mentoria.html"
-            class="btn btn-danger"
-            type="button"
-            id="aplica"
-            onclick="checar()"
-            hidden
-          >
-            Aceitar
-          </a>
+      <!--MODAL-->
+      <div class="modal fade" id="termoMentorModal" tabindex="-1" aria-labelledby="termoMentorModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="termoMentorModalLabel">Termos e Condições</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h5>Termos e Condições para participar do programa Código Certo</h5>
+              <p>
+                Este documento estabelece os termos e condições aplicáveis ao
+                trabalho voluntário no Projeto de Simulação Ágil. O voluntário
+                concorda em realizar suas atividades de maneira ética, responsável e
+                em conformidade com as leis e regulamentos aplicáveis. O voluntário
+                se compromete a contribuir com suas habilidades, conhecimentos e
+                esforços para o desenvolvimento e sucesso do projeto. O voluntariado
+                neste projeto não gera contrato de trabalho ou remuneração
+                financeira. O trabalho realizado é de caráter voluntário e não gera
+                vínculo empregatício. O voluntário concorda em respeitar as
+                diretrizes e orientações fornecidas pelos responsáveis pelo projeto,
+                bem como os prazos e metas estabelecidos. O voluntário deverá tratar
+                todas as informações e dados relacionados ao projeto como
+                confidenciais e não divulgá-los sem autorização prévia dos
+                responsáveis. As regras sobre divulgação de informações e dados do
+                projeto estão relacionados no anexo A deste documento. O voluntário
+                concorda em cumprir as normas de segurança e saúde ocupacional
+                estabelecidas para o projeto, bem como utilizar os equipamentos e
+                recursos fornecidos de forma adequada. O projeto pode ser
+                interrompido, cancelado ou modificado a qualquer momento pelos
+                responsáveis, sem isso gerar direitos ou compensações ao voluntário.
+                O voluntário concorda em ceder os direitos de propriedade
+                intelectual sobre qualquer material, documento ou resultado
+                produzido durante o voluntariado ao projeto. Os responsáveis pelo
+                projeto não se responsabilizam por danos, lesões ou prejuízos
+                causados ao voluntário durante o exercício de suas atividades. O
+                voluntário declara estar ciente dos riscos envolvidos no trabalho
+                voluntário e assume total responsabilidade por sua segurança e
+                bem-estar durante sua participação no projeto. Este termo de
+                voluntariado será regido pelas leis do país em que o projeto está
+                sendo realizado e qualquer disputa relacionada a ele será resolvida
+                pelos tribunais competentes. Ao aceitar estes termos e condições, o
+                voluntário declara estar ciente e concordar com todas as disposições
+                aqui estabelecidas, conforme disposto no anexo B. Este termo de
+                voluntariado será regido pelas leis do país em que o projeto está
+                sendo realizado e qualquer disputa relacionada a ele será resolvida
+                pelos tribunais competentes. Ao aceitar estes termos e condições, a
+                pessoa voluntária declara estar ciente e concorda com todas as
+                disposições aqui estabelecidas, conforme disposto no anexo B. Anexo
+                A Regras sobre confidencialidade e direitos autorais do material
+                produzido pelos grupos de voluntariado: Plágio: A cópia direta ou
+                parcial do material produzido por qualquer equipe, sem dar crédito
+                adequado ou permissão. Isso inclui texto, imagens, vídeos, gráficos
+                ou qualquer outro conteúdo criado pela equipe original. Propriedade
+                Intelectual: Todo o material criado por qualquer equipe original é
+                protegido por direitos autorais e propriedade intelectual. Qualquer
+                uso ou reprodução deste material sem permissão é considerado plágio.
+                Citação Adequada: Se uma equipe deseja usar parte do material
+                produzido por outra equipe, deve buscar a permissão da equipe
+                original e fornecer uma citação adequada. Isso inclui citar a fonte,
+                nomear os autores e fornecer todas as informações necessárias para
+                garantir que o crédito seja dado corretamente. Autorização: É
+                fundamental obter autorização por escrito da equipe original antes
+                de usar seu material de qualquer forma. Isso inclui a reprodução ou
+                adaptação do material para uso em outros projetos, ou atividades.
+                Consequências: O plágio é uma violação grave da ética acadêmica e
+                profissional. Se uma equipe for descoberta plagiando material
+                produzido por outra equipe, poderá enfrentar consequências, como a
+                desqualificação do trabalho voluntário na iniciativa de simulação
+                ágil ou ações legais. Originalidade: Cada equipe é responsável por
+                produzir seu próprio conteúdo original e não deve recorrer ao plágio
+                para obter sucesso ou reconhecimento. A originalidade é um valor
+                fundamental em qualquer projeto ou trabalho voluntário. Portanto, é
+                fundamental que todas as equipes envolvidas na iniciativa de
+                simulação ágil sejam transparentes, respeitem a propriedade
+                intelectual e evitem qualquer tipo de plágio de material produzido
+                por outras equipes. Isso garantirá a integridade do trabalho
+                voluntário e promoverá a criatividade e inovação em cada equipe.
+                Anexo B As regras da Iniciativa têm como objetivo garantir o bom
+                funcionamento do projeto e o envolvimento de pessoas comprometidas.
+                Aqui estão algumas diretrizes básicas: Ser maior de 18 anos; Ter
+                habilidades básicas de comunicação e trabalho em equipe; Querer
+                aprender e compartilhar conhecimentos; Respeitar as normas de
+                conduta e ética estabelecidas pelo iniciativa; Compromisso e
+                responsabilidade com as tarefas; Ter acesso a um computador ou
+                celular e internet para participar das reuniões e atividades online;
+                Aceitar e respeitar a diversidade de opiniões e culturas presentes
+                no grupo da iniciativa. Interesse e comprometimento: As pessoas da
+                equipe devem estar genuinamente interessados no projeto e
+                comprometidos em contribuir com seu tempo e habilidades para o
+                sucesso do mesmo; Disponibilidade: É importante que as pessoas
+                tenham disponibilidade para participar das reuniões e atividades do
+                projeto. Embora seja um projeto voluntário, é fundamental que todos
+                possam dedicar algum tempo regularmente para o progresso do
+                trabalho, equipes inativas por mais de duas semanas terão pessoas
+                realocados ou poderão ser desfeitas, entenderemos que as pessoas das
+                mesmas não têm disponibilidade e daremos a oportunidade para outras
+                pessoas que realmente queiram participar; Diversidade de
+                habilidades: A equipe Multidisciplinar é composta por diferentes
+                profissionais, como um par de PO, SM, UX, UI, Dev Front-end, Dev
+                Back-end , Dev FullStack, cada um com suas habilidades e
+                conhecimentos específicos. Portanto, é importante que a equipe seja
+                diversificada e abrangente em termos de conhecimentos. Espera-se a
+                participação de pessoas das áreas de TI, gestão de projetos, análise
+                de negócios, design, entre outras; Respeito e colaboração: A
+                comunicação e o trabalho em equipe são essenciais para o sucesso do
+                projeto. É fundamental que todas as pessoas sejam respeitosas,
+                colaborativas e estejam dispostas a compartilhar ideias, ouvir os
+                demais e trabalhar juntas para alcançar os objetivos propostos;
+                Compromisso com prazos: O projeto terá metas e prazos a cumprir. É
+                importante que as pessoas da equipe se comprometam a entregar seu
+                trabalho dentro dos prazos estabelecidos, para que o projeto possa
+                avançar de forma fluida; Confidencialidade: Pode ser necessário
+                lidar com informações confidenciais. Nesses casos, é crucial a
+                equipe respeite e mantenha sigilo sobre as informações sensíveis que
+                possam ter acesso. Comunicação clara e frequente: Para garantir a
+                coordenação e o alinhamento entre a equipe, é fundamental manter uma
+                comunicação clara e frequente. Isso pode ser feito por meio de
+                reuniões regulares, trocas de e-mails, plataformas de comunicação,
+                entre outros meios. Essas são algumas regras básicas para participar
+                da equipe Multidisciplinar da iniciativa voluntária da Simulação do
+                Codigo Certo. Ágil. Outras regras e normas específicas podem ser
+                estabelecidas pela coordenação do projeto conforme a necessidade.
+              </p>
+              <input
+              type="checkbox"
+              id="consultar-acervo"
+              data-id="consultar-acervo"
+              name="toggle"
+              />
+              <p class="nomeToogle">Li e concordo com os termos.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+              <button type="button" class="btn btn-danger bg-opacity-10">Continuar</button>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+      
     </main>
-
-    <!-- Fim Modal -->
 
     <!-- JS File for use -->
     <script src="../scripts/script.js"></script>
@@ -273,16 +257,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
   </body>
