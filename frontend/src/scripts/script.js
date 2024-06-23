@@ -16,19 +16,6 @@ for (let x = 0; x < numElementos; x++) {
   };
 }
 
-// =================================================================
-// Condição para abrir o Modal
-
-function openModal() {
-  const modal = document.querySelector("#modal");
-  modal.style.display = "block";
-}
-
-function closeModal() {
-  const modal = document.querySelector("#modal");
-  modal.style.display = "none";
-}
-
 // ===================================================
 // Validação do form dos Inputs no front end
 
