@@ -26,8 +26,7 @@
 
   /* termos mentoria|voluntario */
 
-  /* Termo Voluntário */
-
+  
 .nav-term {
     position: relative;
     background: linear-gradient(
@@ -41,15 +40,36 @@
     margin-top: 0;
     margin-left: 0;
   }
-  
+ 
   .termo-voluntario {
     position: relative;
     background-color: #d9d9d9;
-    width: 800px;
-    height: 990px;
+    width: 760px;
+    height: 784px;
     padding: 20px;
-    margin-top: -118px;
-    margin-left: 570px;
+    margin: 0 auto;
+    z-index: 1;
+    top: -118px;
+  
+  }
+
+  .termo-voluntario h1 {
+    font-size: 24px;
+    padding: 60px 0 0 60px;
+  }
+  .termo-voluntario h2 {
+    width: 500px;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 8px 0 0 60px;
+  }
+
+  .termo-voluntario p {
+    color: red;
+  }
+
+  .termo-voluntario .information p {
+    color: black;
   }
   
   #modal {
@@ -77,13 +97,15 @@
   }
   
   .voltar {
-    width: 50px;
+  /*width: 50px;
     height: 18px;
     top: 60px;
     left: 163px;
     gap: 0px;
-    opacity: 0px;
-    color: aliceblue;
+    opacity: 0px; */
+    display: flex;
+    padding: 60px 0px 0px 136px;
+    color: #F2F2F2;
     text-decoration: none;
   }
   
