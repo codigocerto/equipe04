@@ -39,13 +39,14 @@
     height: 260px;
     margin-top: 0;
     margin-left: 0;
+   
   }
  
   .termo-voluntario {
     position: relative;
     background-color: #d9d9d9;
     width: 760px;
-    height: 784px;
+    height: auto;
     padding: 20px;
     margin: 0 auto;
     z-index: 1;
@@ -64,18 +65,62 @@
     margin: 8px 0 0 60px;
   }
 
-  .termo-voluntario p {
-    color: red;
+  .termo-voluntario i {
+    width: 28px;
+    height: 28px;
+    color: #010D00;
+    margin-top: 52px;
   }
-
-  .termo-voluntario .information p {
-    color: black;
+  .termo-voluntario p {
+    font-size: 18px;
+    line-height: 22px;
+  
+  }
+  .termo-voluntario .information h3,
+  .lgpd {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 20px 0 20px 60px;
   }
   
+  .termo-voluntario .information p {
+    font-size: 18px;
+    margin: 8px 0 0 60px;
+  }
+
+  .regras h3 {
+    margin: 30px 0 0 60px;
+    font-size: 22px;
+    
+  }
+
+  .regras ul {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 20px 0 0 30px;
+    list-style: none;
+  }
+
+  .regras ul i {
+    margin: 0px 8px 0 0px;
+  }
+  
+ 
+  .lgpd p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+ .lgpd button {
+    position: relative;
+    text-align: center;
+    margin: auto;
+ }
+  
   #modal {
-    width: 400px;
+    max-width: 400px;
     height: 700px;
-    background-color: #d9d9d9;
+    background-color: #b30909;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -85,9 +130,10 @@
     animation-duration: 500ms;
     text-align: center;
     overflow: scroll;
+   
   }
-  
-  @keyframes modalAnimation {
+
+    @keyframes modalAnimation {
     from {
       opacity: 1;
     }
