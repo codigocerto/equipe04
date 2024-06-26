@@ -21,15 +21,23 @@
 
 
   /* forms-mentoria | voluntario */
-
+  
+   .form-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 60px 0px 60px;
+    
+    }
 
   .input {
     width: 640px;
     height: 40px;
     border-radius: 8px;
     padding: 5px;
+    margin: 7px 40px 22px 0px;
   }
-
+ 
 
   /* termos mentoria | voluntario */
 
