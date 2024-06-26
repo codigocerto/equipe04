@@ -35,29 +35,32 @@
       #b22c2c 48.66%,
       #7f2020 100%
     );
-    width: auto;
     height: 260px;
-    margin-top: 0;
-    margin-left: 0;
-   
-  }
+    align-content: baseline;
+  
+   }
  
   .termo-voluntario {
     position: relative;
     background-color: #d9d9d9;
     width: 760px;
-    height: auto;
-    padding: 20px;
+    height: 1120px;
     margin: 0 auto;
     z-index: 1;
     top: -118px;
-  
-  }
+    }
+
+  .information,
+  .regras,
+  .lgpd {
+   width: 650px;
+   }
 
   .termo-voluntario h1 {
     font-size: 24px;
     padding: 60px 0 0 60px;
   }
+
   .termo-voluntario h2 {
     width: 500px;
     font-size: 18px;
@@ -71,11 +74,20 @@
     color: #010D00;
     margin-top: 52px;
   }
+
   .termo-voluntario p {
     font-size: 18px;
     line-height: 22px;
-  
   }
+   span {
+    position: absolute;
+    width: 260px;
+    height: 1px;
+    background-color: #010D00;
+    top: 205px;
+    left: 258px;
+    
+   }
   .termo-voluntario .information h3,
   .lgpd {
     font-size: 22px;
@@ -91,7 +103,6 @@
   .regras h3 {
     margin: 30px 0 0 60px;
     font-size: 22px;
-    
   }
 
   .regras ul {
@@ -105,17 +116,24 @@
     margin: 0px 8px 0 0px;
   }
   
- 
+  .lgpd h3 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 20px;
+  }
+
   .lgpd p {
     font-size: 18px;
     line-height: 25px;
+    margin-top: 20px;
   }
   
- .lgpd button {
-    position: relative;
-    text-align: center;
-    margin: auto;
- }
+  .lgpd button {
+    display: block;    
+    margin: 30px auto;
+    padding: 12px 24px;
+    background-color: var(--cor-primary-red);
+  }
   
   #modal {
     max-width: 400px;
@@ -130,8 +148,7 @@
     animation-duration: 500ms;
     text-align: center;
     overflow: scroll;
-   
-  }
+   }
 
     @keyframes modalAnimation {
     from {
@@ -143,16 +160,13 @@
   }
   
   .voltar {
-  /*width: 50px;
-    height: 18px;
-    top: 60px;
-    left: 163px;
-    gap: 0px;
-    opacity: 0px; */
-    display: flex;
-    padding: 60px 0px 0px 136px;
-    color: #F2F2F2;
+    margin: 0px;
+    color: rgb(242, 242, 242);
     text-decoration: none;
+    position: relative;
+    top: 60px;
+    left: 136px;
+   
   }
   
   .input {
