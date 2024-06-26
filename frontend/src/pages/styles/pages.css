@@ -161,3 +161,9 @@
     border-radius: 8px;
     padding: 5px;
   }
+
+  .profile-image-control {
+    max-width: 180px;
+    width: 100%;
+    border-radius: 50%;
+  }

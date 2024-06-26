@@ -46,93 +46,32 @@
         </div>
       </nav>
     </header>
-    <section>
-      <div class="card mb-3" style="max-width: 900px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="/frontend/src/assets/images/home/1718150250994.png" class="img-fluid rounded-start" alt="viniciuslima" width="500" height="500">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Vinícius Lima</h5>
-              <p class="card-text"><small class="text-body-secondary">Idealizador do Projeto</small></p>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed turpis aliquam ipsum egestas suscipit id a nulla. Phasellus mattis viverra luctus.</p>
-              <p class="card-text">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum molestie auctor diam, a cursus tortor consequat ac.</p>
-              <p class="card-text"> <i class="bi bi-linkedin"> </i> <small class="text-body-secondary"> {usuário do linkedin}</small></p>
-            </div>
-          </div>
-        </div>
+    <section class="container my-5">
+      <div class="row">
+        <article class="col-6">
+          <img src="../assets/images/equipe/image-vinicius.png" alt="Vinícius Lima - Idealizador do Projeto" />
+        </article>
+        <article class="col-6">
+          <h2 class="text-danger">Vinícius Lima</h2>
+          <h3>Idealizador do Projeto</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed 
+            turpis aliquam ipsum egestas suscipit id a nulla. Phasellus mattis viverra luctus.
+          </p>
+          <p>
+            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+            mus. Vestibulum molestie auctor diam, a cursus tortor consequat ac.
+          </p>
+          <span class="d-flex align-items-center gap-1">
+            <i class="bi bi-linkedin"></i>
+            <a href="https://www.linkedin.com/in/68vinicius/">Vinícius Lima</a>
+          </span>
+        </article>
       </div>
     </section>
-    <section>
-    <div class="card-group">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." width="200" height="300">
-        <div class="card-body">
-          <h5 class="card-title">Sherlock Holmes</h5>
-          <p class="card-text">Desenvolvedor Full Stack</p> 
-          <i class="bi bi-linkedin"></i><i class="bi bi-globe"></i>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." width="200" height="300">
-        <div class="card-body">
-          <h5 class="card-title">Sherlock Holmes</h5>
-          <p class="card-text">Desenvolvedor Full Stack</p> 
-          <i class="bi bi-linkedin"></i><i class="bi bi-globe"></i>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." width="200" height="300">
-        <div class="card-body">
-          <h5 class="card-title">Sherlock Holmes</h5>
-          <p class="card-text">Desenvolvedor Full Stack</p> 
-          <i class="bi bi-linkedin"></i><i class="bi bi-globe"></i>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." width="200" height="300">
-        <div class="card-body">
-          <h5 class="card-title">Sherlock Holmes</h5>
-          <p class="card-text">Desenvolvedor Full Stack</p> 
-          <i class="bi bi-linkedin"></i><i class="bi bi-globe"></i>
-        </div>
-      </div>
-    </div>
-    <div class="card-group">
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." width="200" height="300">
-        <div class="card-body">
-          <h5 class="card-title">Sherlock Holmes</h5>
-          <p class="card-text">Desenvolvedor Full Stack</p> 
-          <i class="bi bi-linkedin"></i><i class="bi bi-globe"></i>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." width="200" height="300">
-        <div class="card-body">
-          <h5 class="card-title">Sherlock Holmes</h5>
-          <p class="card-text">Desenvolvedor Full Stack</p> 
-          <i class="bi bi-linkedin"></i><i class="bi bi-globe"></i>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." width="200" height="300">
-        <div class="card-body">
-          <h5 class="card-title">Sherlock Holmes</h5>
-          <p class="card-text">Desenvolvedor Full Stack</p> 
-          <i class="bi bi-linkedin"></i><i class="bi bi-globe"></i>
-        </div>
-      </div>
-      <div class="card">
-        <img src="..." class="card-img-top" alt="..." width="200" height="300">
-        <div class="card-body">
-          <h5 class="card-title">Sherlock Holmes</h5>
-          <p class="card-text">Desenvolvedor Full Stack</p> 
-          <i class="bi bi-linkedin"></i><i class="bi bi-globe"></i>
-        </div>
-      </div>
-    </div>
+
+    <section class="container my-5"> 
+      <div class="row d-flex align-items-center justify-content-center py-3" id="cardsContainer"></div>
     </section>
     
     <footer>
@@ -193,6 +132,7 @@
       </footer>
     <!-- script -->
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/renderTeamCards.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
