@@ -24,13 +24,13 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../pages/styles/pages.css" />
   </head>
   <body>
     <main class="term-wrapper">
       <nav class="nav-term">
-        <a class="voltar" href="/"
-          ><i class="bi bi-chevron-left">Voltar</a
-        >
+        <a class="voltar" href="/">
+          <i class="bi bi-chevron-left"></i>Voltar</a>
       </nav>
 
       <section class="termo-voluntario rounded-2">
@@ -44,8 +44,7 @@
 
         <div class="d-flex justify-content-evenly align-items-center">
           <div
-            class="d-flex flex-column justify-content-center align-items-center"
-          >
+            class="d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-1-circle-fill"></i>
             <p>
               Termo de<br />
@@ -54,8 +53,7 @@
           </div>
 
           <div
-            class="d-flex flex-column justify-content-center align-items-center"
-          >
+            class="d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-2-circle"></i>
             <p>
               Dados <br />
@@ -64,8 +62,8 @@
           </div>
         </div>
 
-        <div>
-          <h1>Atenção</h1>
+        <div class="information">
+          <h3>Atenção</h3>
           <p>
             É importante estar ciente de que a inscrição no Simulação não
             garante a sua participação. Isso dependerá de vagas disponíveis nos
@@ -73,21 +71,20 @@
           </p>
         </div>
 
-        <div>
-          <h1>Pré-requisitos e regras de participação:</h1>
+        <div class="regras">
+          <h3>Pré-requisitos e regras de participação:</h3>
           <ul>
-            <li>Conhecimento teórico da área que quer atuar no projeto;</li>
-            <li>
-              Disponibilidade para participar frequentemente de reuniões e
+           <li> <i class="bi bi-check-circle"></i>Conhecimento teórico da área que quer atuar no projeto;</li>
+            <li> <i class="bi bi-check-circle"></i>Disponibilidade para participar frequentemente de reuniões e
               atividades propostas em algum turno (manhã, tarde ou noite);
             </li>
-            <li>Compromisso e responsabilidade com o trabalho;</li>
-            <li>Cumprir prazos de entrega de tarefas;</li>
-            <li>Trabalhar de forma colaborativa;</li>
-            <li>Comunicação clara e frequente com o time;</li>
-            <li>Disposição para aprender e compartilhar habilidades;</li>
-            <li>Respeitar pessoas da equipe;</li>
-            <li>
+            <li> <i class="bi bi-check-circle"></i>Compromisso e responsabilidade com o trabalho;</li>
+            <li> <i class="bi bi-check-circle"></i>Cumprir prazos de entrega de tarefas;</li>
+            <li> <i class="bi bi-check-circle"></i>Trabalhar de forma colaborativa;</li>
+            <li> <i class="bi bi-check-circle"></i>Comunicação clara e frequente com o time;</li>
+            <li> <i class="bi bi-check-circle"></i>Disposição para aprender e compartilhar habilidades;</li>
+            <li> <i class="bi bi-check-circle"></i>Respeitar pessoas da equipe;</li>
+            <li> <i class="bi bi-check-circle"></i>
               Estar ciente de que o projeto, por ter apenas pessoas voluntárias
               envolvidas na sua organização e participação, poderá ser
               interrompido a qualquer momento.
@@ -95,18 +92,20 @@
           </ul>
         </div>
 
-        <div>
-          <h1>LGPD - Lei Geral de Proteção de Dados Pessoais</h1>
+        <div class="lgpd">
+          <h3>LGPD - Lei Geral de Proteção de Dados Pessoais</h3>
           <p>
             Estamos de acordo com a LGPD e usaremos os seus dados apenas para
             entrar em contato com você, e para fins de organização interna caso
             você entre em algum de nossos times.
           </p>
+
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#termoMentorModal">
+            Termo de Responsabilidade
+          </button>
         </div>
 
-        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#termoMentorModal">
-          Termo de Responsabilidade
-        </button>
+        
       </section>
 
       <!--MODAL-->
