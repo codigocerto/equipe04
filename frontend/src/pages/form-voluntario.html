@@ -63,11 +63,11 @@
           </div>
         </div>
 
-        <form class="row g-3 form-container">
+        <form class="row g-3 form-container needs-validation" novalidate>
           <div class="col-12 input">
             <label for="name" class="form-label">Nome Completo:</label>
             <input   type="text" class="form-control" id="validationCustom01" placeholder="Nome Completo" required>
-          </div>
+         </div>
        
           <div class="col-md-6">
              <label for="email" class="form-label">Email para Contato:</label>
@@ -76,16 +76,17 @@
          
           <div class="col-md-6">
             <label class="form-label" for="cel">Número Whatsapp:</label>
-            <input class="form-control" type="text" placeholder="(XX) XXXXX-XXXX" id="cel" required>
+            <input class="form-control" type="tel" placeholder="(XX) XXXXX-XXXX" id="cel" maxlength="15" onkeyup="handlePhone(event)" required>
           </div>
 
           <div class="col-md-4">
             <label class="form-label" for="country">País:</label>
             <select id="country" name="country" class="form-select" required>
+              <option selected></option>
               <option>Alemanha</option>
                 <option>Austrália</option>
                 <option>Bélgica</option>
-                <option selected>Brasil</option>
+                <option>Brasil</option>
                 <option>Canadá</option>
                 <option>Coreia do Sul</option>
                 <option>Dinamarca</option>
@@ -110,9 +111,8 @@
           <div class="col-md-8">
             <label class="form-label" for="stack">Função Pretendida:</label>
             <select class="form-select"  name="stack" id="stack" required>
-              <option value="QA">
-                Analista de Teste - Quality Assurance
-              </option>
+              <option value=""></option>
+              <option value="QA">Analista de Teste - Quality Assurance</option>
               <option value="BE">Programador Backend</option>
               <option value="FE">Programador Frontend</option>
               <option value="FS">Programador Fullstack</option>
@@ -125,6 +125,7 @@
           <div class="col-md-6">
             <label class="form-label" for="period">Periodo de Disponibilidade:</label>
             <select class="form-select" name="period" id="period" required>
+              <option value=""></option>
               <option value="QA">Manhã</option>
                 <option value="BE">Tarde</option>
                 <option value="FE">Noite</option>
@@ -134,8 +135,9 @@
           <div class="col-md-6">
             <label class="form-label" for="level">Nível de Senioridade:</label>
             <select class="form-select" name="level" id="level" required>
+              <option value=""></option>
               <option value="QA">Sem experiência</option>
-                <option value="BE">Junior</option>
+               <option value="BE">Junior</option>
                 <option value="FE">Pleno</option>
                 <option value="FS">Senior</option>
             </select>
@@ -180,6 +182,8 @@
 
     <!-- JS File for use -->
     <script src="../scripts/script.js"></script>
+
+  
     <!-- Js Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
