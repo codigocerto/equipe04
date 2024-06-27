@@ -34,7 +34,7 @@
         >
       </nav>
 
-      <section class="termo-voluntario rounded-2">
+      <section class="termo rounded-2 form-termo">
         <div>
           <h1>Voluntário</h1>
           <h2>
@@ -43,18 +43,18 @@
           </h2>
         </div>
 
-        <div class="d-flex flex-row justify-content-evenly align-items-start">
+        <div class="d-flex justify-content-evenly align-items-center">
           <div
-            class="d-flex flex-column justify-content-start align-items-start"
-          >
-          <i class="bi bi-1-circle"></i>
+            class="d-flex flex-column justify-content-center align-items-center">
+            <i class="bi bi-1-circle"></i>
             <p>
               Termo de<br />
               Consentimento
             </p>
           </div>
-
-          <div class="dois">
+          <hr class="linha">
+          <div
+            class="d-flex flex-column justify-content-center align-items-center">
             <i class="bi bi-2-circle-fill"></i>
             <p>
               Informações<br />
@@ -63,57 +63,30 @@
           </div>
         </div>
 
-        <form
-          class="d-flex flex-column justify-content-center align-items-center"
-        >
-          <div>
-            <label for="name">Nome Completo:</label>
-            <input
-              class="input"
-              type="text"
-              id="name "
-              placeholder="Nome Completo"
-            />
+        <form class="row g-3 form-container needs-validation" novalidate>
+          <div class="col-12 input">
+            <label for="name" class="form-label">Nome Completo:</label>
+            <input   type="text" class="form-control" id="validationCustom01" placeholder="Nome Completo" required>
+         </div>
+       
+          <div class="col-md-6">
+             <label for="email" class="form-label">Email para Contato:</label>
+            <input type="email" class="form-control" placeholder="E-mail" id="email" required>
           </div>
-          <!--  -->
-          <div class="d-flex flex-row">
-            <div>
-              <label for="email">Email:</label>
-              <input
-                style="width: 400px"
-                class="input"
-                type="text"
-                placeholder="E-mail"
-                id="email"
-              />
-            </div>
-            <!--  -->
-            <div>
-              <label for="cel">Número Whatsapp:</label>
-              <input
-                style="width: 200px"
-                class="input"
-                type="text"
-                placeholder="(XX) XXXXX-XXXX"
-                id="cel"
-              />
-            </div>
-            <!--  -->
+         
+          <div class="col-md-6">
+            <label class="form-label" for="cel">Número Whatsapp:</label>
+            <input class="form-control" type="tel" placeholder="(XX) XXXXX-XXXX" id="cel" maxlength="15" onkeyup="handlePhone(event)" required>
           </div>
-          <!--  -->
-          <div class="d-flex flex-row">
-            <div>
-              <label for="country">País</label>
-              <select
-                style="width: 200px"
-                class="input"
-                name="country"
-                id="country"
-              >
-                <option>Alemanha</option>
+
+          <div class="col-md-4">
+            <label class="form-label" for="country">País:</label>
+            <select id="country" name="country" class="form-select" required>
+              <option selected></option>
+              <option>Alemanha</option>
                 <option>Austrália</option>
                 <option>Bélgica</option>
-                <option selected>Brasil</option>
+                <option>Brasil</option>
                 <option>Canadá</option>
                 <option>Coreia do Sul</option>
                 <option>Dinamarca</option>
@@ -132,82 +105,85 @@
                 <option>Singapura</option>
                 <option>Suécia</option>
                 <option>Nova Zelândia</option>
-              </select>
-            </div>
-            <!--  -->
-            <div>
-              <label for="stack">Função Pretendida: </label>
-              <select
-                style="width: 400px"
-                class="input"
-                name="stack"
-                id="stack"
-              >
-                <option value="QA">
-                  Analista de Teste - Quality Assurance
-                </option>
-                <option value="BE">Programador Backend</option>
-                <option value="FE">Programador Frontend</option>
-                <option value="FS">Programador Fullstack</option>
-                <option value="PO">Product Owner</option>
-                <option value="SM">Srum Master</option>
-                <option value="UXUI">UX/UI Designer</option>
-              </select>
-            </div>
+            </select>
           </div>
-          <!--  -->
-          <div class="d-flex flex-row">
-            <div class="gap-0">
-              <label for="period">Periodo de Disponibilidade: </label>
-              <select
-                style="width: 400px"
-                class="input"
-                name="period"
-                id="period"
-              >
-                <option value="QA">Manhã</option>
+        
+          <div class="col-md-8">
+            <label class="form-label" for="stack">Função Pretendida:</label>
+            <select class="form-select"  name="stack" id="stack" required>
+              <option value=""></option>
+              <option value="QA">Analista de Teste - Quality Assurance</option>
+              <option value="BE">Programador Backend</option>
+              <option value="FE">Programador Frontend</option>
+              <option value="FS">Programador Fullstack</option>
+              <option value="PO">Product Owner</option>
+              <option value="SM">Srum Master</option>
+              <option value="UXUI">UX/UI Designer</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="period">Periodo de Disponibilidade:</label>
+            <select class="form-select" name="period" id="period" required>
+              <option value=""></option>
+              <option value="QA">Manhã</option>
                 <option value="BE">Tarde</option>
                 <option value="FE">Noite</option>
-              </select>
-            </div>
-            <!--  -->
-            <div>
-              <label class="" for="level">Nível de Senioridade:</label>
-              <select
-                style="width: 200px"
-                class="input"
-                name="level"
-                id="level"
-              >
-                <option value="QA">Sem experiência</option>
-                <option value="BE">Junior</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label" for="level">Nível de Senioridade:</label>
+            <select class="form-select" name="level" id="level" required>
+              <option value=""></option>
+              <option value="QA">Sem experiência</option>
+               <option value="BE">Junior</option>
                 <option value="FE">Pleno</option>
                 <option value="FS">Senior</option>
-              </select>
+            </select>
+          </div>
+        
+          <div class="col-12">
+            <label class="form-label" for="linkedin">Link do Perfil no Linkedin:</label>
+            <input type="text" class="form-control" id="linkedin" placeholder="http://www.linkedin.com/in/seulink">
+          </div>
+
+          <p>Gostaria de Liderar Projetos?</p>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label" for="gridCheck">
+                Sim! Tenho interesse em liderar projetos e assumir responsabilidades.
+              </label>
             </div>
           </div>
-          <!--  -->
-          <div>
-            <label for="linkedin">Link do Perfil no Linkedin:</label>
-            <input
-              class="input"
-              type="text"
-              id="linkedin"
-              placeholder="http://www.linkedin.com/in/seulink"
-            />
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label" for="gridCheck">
+                Não! No momento prefiro focar em desenvolvimento e contribuir como membro.
+              </label>
+            </div>
           </div>
-          <!--  -->
-          <div class="d-flex justify-content-center align-items-center gap-2">
-            <button type="button" class="btn btn-danger">
+        
+          <div class="col-12">
+            <button type="submit" class="btn btn-danger btn-form">
               Enviar Cadastro
             </button>
+               <br>
+              <br>
+             <br>
           </div>
-        </form>
-      </section>
+       </form>
+     </section>
     </main>
 
     <!-- JS File for use -->
     <script src="../scripts/script.js"></script>
+
+  
     <!-- Js Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
