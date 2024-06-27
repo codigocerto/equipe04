@@ -23,17 +23,10 @@
   /* forms-mentoria | voluntario */
   
    .form-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0px 60px 0px 60px;
-    
-    }
+      margin: 0px 10px 0px 60px;
+   }
 
   .input {
-    width: 640px;
-    height: 40px;
-    border-radius: 8px;
     padding: 5px;
     margin: 7px 40px 22px 0px;
   }
@@ -53,6 +46,7 @@
     max-width: 100%;
     height: 260px;
     align-content: baseline;
+    box-shadow: 5px 5px 5px rgb(113, 108, 108);
     }
  
   .termo-voluntario {
@@ -63,7 +57,8 @@
     padding: 0 60px 0 0;
     z-index: 1;
     top: -118px;
-    }
+    box-shadow: 5px 5px 5px rgb(113, 108, 108);
+  }
 
   .termo-voluntario h1 {
     font-size: 24px;
@@ -151,6 +146,7 @@
     padding: 12px 24px;
     background-color: var(--cor-primary-red);
     font-size: 18px;
+    box-shadow: 5px 5px 5px rgb(113, 108, 108);
   }
     
   .voltar {
@@ -160,11 +156,13 @@
     position: relative;
     top: 60px;
     left: 136px;
+    text-shadow: 1px 1px 1px black;
+    
     
    }
 
     /* modal mentoria | voluntario */
-
+   
    .modal-header {
    border: 0px;
     }
@@ -177,6 +175,7 @@
     max-width: 440px;
     height: 584px;
     margin: auto;
+    
    }
 
    .modal-body h5 {
@@ -215,8 +214,10 @@
 
    }
 .modal-footer button {
-    max-width: 106px;
+    width: 106px;
     height: 36px;
+    box-shadow: 2px 2px 2px rgb(113, 108, 108);
+   
      }
   /*
    #modal {
