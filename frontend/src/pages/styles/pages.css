@@ -37,7 +37,7 @@
     box-shadow: 5px 5px 5px rgb(113, 108, 108);
   }
 
-  .form-termo-voluntario i {
+  .form-termo i {
     width: 28px;
     height: 28px;
     color: #010D00;
@@ -60,7 +60,7 @@
     box-shadow: 5px 5px 5px rgb(113, 108, 108);
     }
  
-  .termo-voluntario {
+  .termo {
     position: relative;
     background-color: #d9d9d9;
     max-width: 760px;
@@ -71,26 +71,26 @@
     box-shadow: 5px 5px 5px rgb(113, 108, 108);
   }
 
-  .termo-voluntario h1 {
+  .termo h1 {
     font-size: 24px;
     padding: 60px 0 0 60px;
   }
 
-  .termo-voluntario h2 {
+  .termo h2 {
     max-width: 500px;
     font-size: 18px;
     line-height: 22px;
     margin: 8px 0 0 60px;
   }
 
-  .termo-voluntario i {
+  .termo i {
     width: 28px;
     height: 28px;
     color: #010D00;
     margin: 52px 5px 5px -7px;
   }
 
-  .termo-voluntario p {
+  .termo p {
     font-size: 18px;
     line-height: 22px;
    }
@@ -109,14 +109,14 @@
     max-width: 650px;
     }
 
-  .termo-voluntario .information h3,
+  .termo .information h3,
   .lgpd {
     font-size: 22px;
     line-height: 30px;
     margin: 20px 0 20px 60px;
   }
   
-  .termo-voluntario .information p {
+  .termo .information p {
     font-size: 18px;
     margin: 8px 0 0 60px;
     max-width: 700px;
@@ -187,7 +187,8 @@
     height: 584px;
     margin: auto;
     scrollbar-color: black white;
-  }
+    
+   }
 
    .modal-body h5 {
     margin-top: 12px;
