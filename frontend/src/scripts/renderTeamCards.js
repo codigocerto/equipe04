@@ -116,12 +116,12 @@ function renderTeamCards(team) {
 
         card.innerHTML = `
             <img src="../assets/images/equipe/${member.id}.jpeg" class="profile-image-control" />
-            <div class="d-flex align-items-center justify-content-between gap-2">
+            <div class="d-flex mobile-first align-items-center justify-content-between gap-2">
                 <div class="d-flex align-items-start flex-column justify-content-start">
-                    <span>${member.fullName}</span>
+                    <span class="card_name">${member.fullName}</span>
                     <small>${member.stack}</small>
                 </div> 
-                <div class="d-flex align-items-center gap-1">
+                <div class="d-flex align-items-center gap-2">
                     <a href="${member.urlLinkedin}" target="_blank"">
                         <i class="bi bi-linkedin fs-4"></i>
                     </a>
