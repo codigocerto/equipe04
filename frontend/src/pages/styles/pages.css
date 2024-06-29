@@ -298,8 +298,27 @@
  color: #000; 
  font-weight: bold;
 }
-#cardsContainer  i{
+#cardsContainer i{
   color: rgb(160, 4, 4);
+}
+.bg-equipe{
+  padding: 30px;
+  width: 100%;
+  background-image: var(--background);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title-equipe{
+ text-align: center;
+ color: #fff;
+ font-weight: 400;
+}
+.sub_title-equipe{
+  display: block;
+  font-weight: 100;
+  color: #f1f1f1;
+  font-size: .7em;
 }
 @media (max-width: 576px) {
   .mobile-first{
