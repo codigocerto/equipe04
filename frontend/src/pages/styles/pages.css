@@ -23,7 +23,7 @@
   /* forms-mentoria | voluntario */
   
    .form-container {
-      margin: 0px 10px 0px 60px;
+      margin: 0px 40px 0px 40px;
    }
 
   .input {
@@ -65,7 +65,7 @@
     background-color: #d9d9d9;
     max-width: 760px;
     margin: 0 auto;
-    padding: 0 60px 0 0;
+    padding: 0 40px 0 20px;
     z-index: 1;
     top: -118px;
     box-shadow: 5px 5px 5px rgb(113, 108, 108);
@@ -108,6 +108,14 @@
     .regras,
     .lgpd {
     max-width: 650px;
+        
+    }
+    .information p,
+    .regras,
+    .lgpd p {
+   
+    padding: 0 30px 0 0;
+    text-align: left;
     }
 
   .termo .information h3,
@@ -152,7 +160,7 @@
     max-width: 700px;
   }
   
-  .lgpd button {
+  .termo .button-termo {
     display: block;    
     margin: 30px auto;
     padding: 12px 24px;
@@ -235,6 +243,8 @@
  
  
      /* responsividade modal mentoria | voluntario */
+
+  
 
      @media (max-width: 450px) {
       html, h1, h2, h3, h4, h5, h6, p, ul, li {
