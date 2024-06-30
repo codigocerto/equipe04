@@ -116,8 +116,8 @@ function renderTeamCards(team) {
 
         card.innerHTML = `
             <img src="../assets/images/equipe/${member.id}.jpeg" class="profile-image-control" />
-            <div class="d-flex mobile-first align-items-center justify-content-between gap-2">
-                <div class="d-flex align-items-start flex-column justify-content-start">
+            <div class="d-flex mobile-first-card align-items-center justify-content-between gap-2">
+                <div class="content-card">
                     <span class="card_name">${member.fullName}</span>
                     <small>${member.stack}</small>
                 </div> 
