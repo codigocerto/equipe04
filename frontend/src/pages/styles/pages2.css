@@ -1,0 +1,406 @@
+:root {
+  --cor-primary-black: #000000;
+  --cor-primary-red: #E53939;
+  --cor-primary-white: #FFFFFF;
+  --cor-input-bg: #f2f2f2;
+  --cor-input-placeholder: #272727;
+  --cor-secondary-gray: #f5f5f5;
+  --cor-tertiary-gray: #d9d9d9;
+  --cor-line: rgba(0,0,0,0.2);
+  --cor-border-horizontal-footer: rgba(187, 1, 1, 0.20);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-term {
+  position: relative;
+  background: linear-gradient(
+    279.98deg,
+    #e53939 0%,
+    #b22c2c 48.66%,
+    #7f2020 100%
+  );
+  height: 260px;
+}
+
+.nav-term > nav > a {
+  text-decoration: none;
+}
+  
+.nav-term > nav > a:hover{
+  color: var(--cor-primary-black);
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+.signup {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.signup__container {
+  background-color: var(--cor-tertiary-gray);
+  padding: 60px;
+  border-radius: 6px;
+}
+
+@media (max-width: 640px) {
+  .signup__container {
+    padding: 30px;
+  }
+}
+
+.signup__container__page { 
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .signup__container__page { 
+    margin-top: 24px;
+  }
+}
+
+.signup__container__page-icon {
+  font-size: 28px;
+}
+
+.signup__container__page-line {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup__container__page-line > span {
+  background-color: var(--cor-line);
+  height: 1px;
+  content: "";
+  width: 40%;
+}
+
+.signup__container__form-input {
+  font-size: 12px;
+  padding: 14px;
+  background-color: var(--cor-input-bg);
+  color: var(--cor-input-placeholder);
+}
+
+.signup__container__form-input::placeholder {
+  color: var(--cor-input-placeholder);
+}
+
+
+.signup__container__form-radio input {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .signup__container__form-radio {
+    margin-bottom: 8px;
+  }
+}
+
+.signup__container__form-radio label {
+  font-size: 12px;
+}
+
+.signup__container__form-radio input + label:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: var(--cor-input-bg);
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+.signup__container__form-radio input:checked + label:before {
+  background-color: var(--cor-primary-red)
+}
+
+.signup__container__form-btn {
+  background-color: var(--cor-primary-red);
+  padding: 10px 16px;
+  color: var(--cor-primary-white);
+  border-radius: 8px;
+}
+
+.signup__container__form-btn:hover {
+  border: 1px solid var(--cor-primary-red);
+  padding: 10px 16px;
+  color: var(--cor-primary-red);
+}
+
+/* equipe */
+
+
+/* forms-mentoria | voluntario */
+
+.form-container {
+  margin: 0px 40px 0px 40px;
+}
+
+.input {
+  padding: 5px;
+  margin: 7px 40px 22px 0px;
+}
+
+.btn-form {
+  width: 150px;
+  background-color: var(--cor-primary-red);
+}
+
+/* termos mentoria | voluntario */
+
+
+
+
+.termo {
+  position: relative;
+  background-color: #d9d9d9;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 40px 0 20px;
+  z-index: 1;
+  top: -118px;
+}
+
+.termo h1 {
+  font-size: 24px;
+  padding: 60px 0 0 60px;
+}
+
+.termo h2 {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 8px 0 0 60px;
+}
+
+.termo i {
+  width: 28px;
+  height: 28px;
+  color: #010D00;
+  margin: 52px 5px 5px -7px;
+}
+
+.termo p {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+ }
+
+ .linha {
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  background-color: #010D00;
+  top: 190px;
+  }
+
+  .information,
+  .regras,
+  .lgpd {
+  max-width: 650px;
+      
+  }
+  .information p,
+  .regras,
+  .lgpd p {
+ 
+  padding: 0 30px 0 0;
+  text-align: left;
+  }
+
+.termo .information h3,
+.lgpd {
+  font-size: 22px;
+  line-height: 30px;
+  margin: 20px 0 20px 60px;
+}
+
+.termo .information p {
+  font-size: 18px;
+  margin: 8px 0 0 60px;
+  max-width: 700px;
+}
+
+.regras h3 {
+  margin: 30px 0 0 60px;
+  font-size: 22px;
+}
+
+.regras ul {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 20px 0 0 30px;
+  list-style: none;
+}
+
+.regras ul i {
+  margin: 0px 8px 0 0px;
+}
+
+.lgpd h3 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.lgpd p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 20px;
+  max-width: 700px;
+}
+
+.termo .button-termo {
+  display: block;    
+  margin: 30px auto;
+  padding: 12px 24px;
+  background-color: var(--cor-primary-red);
+  font-size: 18px;
+}
+  
+.voltar {
+  margin: 0px;
+  color: rgb(242, 242, 242);
+  text-decoration: none;
+  position: relative;
+  top: 60px;
+  left: 136px;
+ }
+
+.page-icon {
+  font-size: 28px;
+}
+
+  /* modal mentoria | voluntario */
+ 
+ .modal-header {
+ border: 0px;
+  }
+
+ .modal-title {
+ margin: 30px 0 0 30px;
+ }
+
+ .modal-body {
+  max-width: 440px;
+  height: 584px;
+  margin: auto;
+  scrollbar-color: black white;
+  
+ }
+
+ .modal-body h5 {
+  margin-top: 12px;
+  font-size: 15px;
+ }
+
+ .modal-body p {
+  margin-top: 16px;
+  font-size: 12px;
+  text-align: justify;
+  line-height: 22px;
+ }
+
+ .toggle {
+      display: flex;
+      align-items: center;
+     
+    }
+ .toggle input {
+    width: 16px;
+    height: 16px;
+ }
+
+ .nomeToogle {
+  font-size: 16px!important;
+  padding: 2px;
+  max-width: 269px;
+    
+ }
+
+ .modal-footer {
+  border: 0px;
+  position: relative;
+  right: 30px;
+
+ }
+.modal-footer button {
+  width: 106px;
+  height: 36px;
+  }
+
+
+   /* responsividade modal mentoria | voluntario */
+
+
+
+   @media (max-width: 450px) {
+    html, h1, h2, h3, h4, h5, h6, p, ul, li {
+        font-size: 95%!important;
+       
+    }
+
+   .lgpd h3 {
+    font-size: 62%!important;
+   }
+
+   .lgpd p {
+    font-size: 62%!important;
+   }
+
+    .linha {
+      width: 25%;
+      top: 175px;
+  }
+
+  .termo .button-termo {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+}
+@media (max-width: 377px) {
+  .linha {
+    width: 23%;
+    top: 200px;
+
+  }
+
+  .lgpd button {
+    padding: 10px 18px;
+    font-size: 10px;
+  }
+  
+}
+
+.profile-image-control {
+  max-width: 180px;
+  width: 100%;
+  border-radius: 50%;
+}
