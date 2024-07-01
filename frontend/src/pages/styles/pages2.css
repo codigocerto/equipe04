@@ -155,6 +155,11 @@ main {
 
 /* equipe */
 
+li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
 
 /* forms-mentoria | voluntario */
 
