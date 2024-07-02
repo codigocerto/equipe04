@@ -42,7 +42,7 @@
 
 main {
   position: relative;
-  z-index: 1;
+  z-index: -1;
 }
 
 .signup {
@@ -50,7 +50,16 @@ main {
   top: 60%;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 0;
+}
+
+.modal-backdrop {
+  z-index: -2;
+}
+
+.modal__text {
+  font-size: 12px;
+  
 }
 
 .signup__container {
@@ -178,10 +187,6 @@ li {
 }
 
 /* termos mentoria | voluntario */
-
-
-
-
 .termo {
   position: relative;
   background-color: #d9d9d9;
@@ -302,107 +307,6 @@ li {
   font-size: 28px;
 }
 
-  /* modal mentoria | voluntario */
- 
- .modal-header {
- border: 0px;
-  }
-
- .modal-title {
- margin: 30px 0 0 30px;
- }
-
- .modal-body {
-  max-width: 440px;
-  height: 584px;
-  margin: auto;
-  scrollbar-color: black white;
-  
- }
-
- .modal-body h5 {
-  margin-top: 12px;
-  font-size: 15px;
- }
-
- .modal-body p {
-  margin-top: 16px;
-  font-size: 12px;
-  text-align: justify;
-  line-height: 22px;
- }
-
- .toggle {
-      display: flex;
-      align-items: center;
-     
-    }
- .toggle input {
-    width: 16px;
-    height: 16px;
- }
-
- .nomeToogle {
-  font-size: 16px!important;
-  padding: 2px;
-  max-width: 269px;
-    
- }
-
- .modal-footer {
-  border: 0px;
-  position: relative;
-  right: 30px;
-
- }
-.modal-footer button {
-  width: 106px;
-  height: 36px;
-  }
-
-
-   /* responsividade modal mentoria | voluntario */
-
-
-
-   @media (max-width: 450px) {
-    html, h1, h2, h3, h4, h5, h6, p, ul, li {
-        font-size: 95%!important;
-       
-    }
-
-   .lgpd h3 {
-    font-size: 62%!important;
-   }
-
-   .lgpd p {
-    font-size: 62%!important;
-   }
-
-    .linha {
-      width: 25%;
-      top: 175px;
-  }
-
-  .termo .button-termo {
-    padding: 10px 18px;
-    font-size: 12px;
-  }
-
-}
-@media (max-width: 377px) {
-  .linha {
-    width: 23%;
-    top: 200px;
-
-  }
-
-  .lgpd button {
-    padding: 10px 18px;
-    font-size: 10px;
-  }
-  
-}
 
 .profile-image-control {
   max-width: 180px;
