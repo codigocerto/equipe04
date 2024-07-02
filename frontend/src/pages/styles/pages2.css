@@ -21,6 +21,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.col-3 {
+  width: 20%;
+}
+
 .nav-term {
   position: relative;
   background: linear-gradient(
@@ -42,7 +46,7 @@
 
 main {
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .signup {
@@ -50,7 +54,7 @@ main {
   top: 60%;
   left: 0;
   right: 0;
-  z-index: 0;
+  z-index: 2;
 }
 
 .modal-backdrop {
@@ -162,154 +166,54 @@ main {
   color: var(--cor-primary-red);
 }
 
-/* equipe */
 
 li {
   list-style: none;
   margin-bottom: 16px;
 }
 
-
-/* forms-mentoria | voluntario */
-
-.form-container {
-  margin: 0px 40px 0px 40px;
-}
-
-.input {
-  padding: 5px;
-  margin: 7px 40px 22px 0px;
-}
-
-.btn-form {
-  width: 150px;
-  background-color: var(--cor-primary-red);
-}
-
-/* termos mentoria | voluntario */
-.termo {
-  position: relative;
-  background-color: #d9d9d9;
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 40px 0 20px;
-  z-index: 1;
-  top: -118px;
-}
-
-.termo h1 {
-  font-size: 24px;
-  padding: 60px 0 0 60px;
-}
-
-.termo h2 {
-  max-width: 500px;
-  font-size: 18px;
-  line-height: 22px;
-  margin: 8px 0 0 60px;
-}
-
-.termo i {
-  width: 28px;
-  height: 28px;
-  color: #010D00;
-  margin: 52px 5px 5px -7px;
-}
-
-.termo p {
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
- }
-
- .linha {
-  position: absolute;
-  width: 30%;
-  height: 1px;
-  background-color: #010D00;
-  top: 190px;
-  }
-
-  .information,
-  .regras,
-  .lgpd {
-  max-width: 650px;
-      
-  }
-  .information p,
-  .regras,
-  .lgpd p {
- 
-  padding: 0 30px 0 0;
-  text-align: left;
-  }
-
-.termo .information h3,
-.lgpd {
-  font-size: 22px;
-  line-height: 30px;
-  margin: 20px 0 20px 60px;
-}
-
-.termo .information p {
-  font-size: 18px;
-  margin: 8px 0 0 60px;
-  max-width: 700px;
-}
-
-.regras h3 {
-  margin: 30px 0 0 60px;
-  font-size: 22px;
-}
-
-.regras ul {
-  font-size: 18px;
-  line-height: 30px;
-  margin: 20px 0 0 30px;
-  list-style: none;
-}
-
-.regras ul i {
-  margin: 0px 8px 0 0px;
-}
-
-.lgpd h3 {
-  font-size: 20px;
-  line-height: 25px;
-  margin-top: 20px;
-}
-
-.lgpd p {
-  font-size: 18px;
-  line-height: 25px;
-  margin-top: 20px;
-  max-width: 700px;
-}
-
-.termo .button-termo {
-  display: block;    
-  margin: 30px auto;
-  padding: 12px 24px;
-  background-color: var(--cor-primary-red);
-  font-size: 18px;
-}
-  
-.voltar {
-  margin: 0px;
-  color: rgb(242, 242, 242);
+a {
   text-decoration: none;
-  position: relative;
-  top: 60px;
-  left: 136px;
- }
-
-.page-icon {
-  font-size: 28px;
 }
 
+.team-section {
+  background-color: var(--cor-primary-red);
+  background-image: url('../../assets/images/equipe/equipe-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-.profile-image-control {
+.team-section__subtitle {
+  font-size: 24px;
+}
+
+.team-section__title {
+  font-size: 32px;
+}
+
+.team-section__card {
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.team-section__card__info > small {
+  font-size: 12px;
+}
+
+.team-section__card__image {
   max-width: 180px;
   width: 100%;
   border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+.team-section__card__socials-icons {
+  font-size: 24px;
+  color: var(--cor-primary-red);
+  margin-left: 8px;
+}
+
+.team-section__card__socials-icons:hover{
+  color: var(--cor-primary-black);
 }
