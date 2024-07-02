@@ -244,8 +244,104 @@ header ul {
 
 /* INICIO DA SESSÃO CARREIAS */
 
-#carreira  {
+#carreira {
   background-color: #E53939;
+}
+
+.container-carreiras {
+  height: 1100px;
+  padding: 100px 140px 270px;
+}
+
+.subtitulo-carreiras h2 {
+  font-weight: 300;
+  color: #f2f2f2;
+  font-size: 24px;
+}
+
+.subtitulo-carreiras h3 {
+  font-weight: 300;
+  color: #f2f2f2;
+  font-size: 32px;
+  width: 600px;
+  margin: 0 0 60px 0;
+}
+
+.subtitulo-carreiras span {
+  font-weight: 700;
+}
+
+.container-carreiras-profissoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.front-back {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qa-dados-metodologias {
+  display: flex;
+  justify-content: space-between;
+}
+
+.uiux {
+  height: 560px;
+  width: 100%;
+  max-width: 160px;
+  color: #f2f2f2;
+}
+
+#uiux-carreiras {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+#background-image-uiux {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/home/card-carreiras-ui.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+  border-radius: 9px;
+}
+
+.overlay-carreiras {
+  position: absolute;
+  padding: 160px 17px 200px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.overlay-carreiras h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.overlay-carreiras p {
+  font-size: 12px;
+}
+
+.overlay-carreiras button {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid #e53939;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #f2f2f2;
 }
 
 
