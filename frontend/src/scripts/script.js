@@ -1,19 +1,14 @@
-console.log("Connected");
 
-// ==========================================================
 // Condição para desbloquear o botão de confirmação do termo de responsabilidade.
+const termos = document.getElementById('terms')
+const btnTermos = document.getElementById('btnTerms')
 
-const checa = document.getElementsByName("toggle");
-const numElementos = checa.length;
-const bt = document.getElementById("aplica");
-for (let x = 0; x < numElementos; x++) {
-  checa[x].onclick = function () {
-    // "input[name='toggle']:checked" conta os checkbox checados
-    let cont = document.querySelectorAll("input[name='toggle']:checked").length;
-    // ternário que verifica se há algum checado.
-    // se não há, retorna 0 (false), logo desabilita o botão
-    bt.hidden = cont ? false : true;
-  };
+function aceitarTermo() {
+  if(btnTermos.hasAttribute('disabled')) {
+    btnTermos.removeAttribute('disabled')
+  } else {
+    btnTermos.setAttribute('disabled', 'true')
+  }
 }
 
 
