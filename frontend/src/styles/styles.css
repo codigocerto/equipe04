@@ -389,7 +389,9 @@ header ul {
 }
 
 /* FOOTER DO HOME */
-
+.linkedin {
+  margin:.5rem .5rem .5rem 0;
+}
 .rodape p, a {
   color: var(--cor-primary-black);
 }
@@ -418,3 +420,16 @@ header ul {
 .rodape i:hover {
   color: var(--cor-primary-red);
 }
+
+/* media queries */
+
+
+/* footer */
+@media (max-width: 576px) {
+
+ 
+ .container .col-12 {
+  width: 50%;
+   }
+ 
+} 

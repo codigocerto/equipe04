@@ -252,6 +252,8 @@
           font-size: 95%!important;
          
       }
+    
+
 
      .lgpd h3 {
       font-size: 62%!important;
@@ -285,6 +287,8 @@
     }
     
   }
+
+
 
   /* INICIO - EQUIPE */
 
@@ -361,6 +365,7 @@ align-items: flex-start;
   flex-direction: row;
 }
 
+
 @media (max-width: 976px) {
 
   .container-header {
@@ -420,6 +425,7 @@ align-items: flex-start;
   .equipe_lima{
     max-width: 350px;
  }
+
 } 
 
 @media (max-width: 390px) {
@@ -428,5 +434,5 @@ align-items: flex-start;
      margin: 0 4px 0 19px;
    
      }
-  }
+    }
 /* FIM - EQUIPE */
