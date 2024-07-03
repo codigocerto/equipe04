@@ -107,31 +107,31 @@ const team = [
 ]
 
 function renderTeamCards(team) {
-    const cardsContainer = document.getElementById('cardsContainer');
+    const cardsContainer = document.getElementById('teamCardContainer');
     cardsContainer.innerHTML = '';
 
     team.forEach(member => {
         const card = document.createElement('article');
-        card.classList.add('col-4', 'p-3', 'd-flex', 'align-items-center', 'flex-column');
+        card.classList.add('member-card');
 
         card.innerHTML = `
-            <img src="../assets/images/equipe/${member.id}.jpeg" class="profile-image-control" />
-            <div class="d-flex mobile-first-card align-items-center justify-content-between gap-2">
-                <div class="content-card">
-                    <span class="card_name">${member.fullName}</span>
-                    <small>${member.stack}</small>
+            <img src="../assets/images/equipe/${member.id}.jpeg" alt="${member.fullName} image" />
+            <div class="member-card__info mt-3">
+                <div class="member-card__info__name">
+                    <span class="fw-medium">${member.fullName}</span>
+                    <small class="fw-light">${member.stack}</small>
                 </div> 
-                <div class="d-flex align-items-center gap-2">
+                <div class="member-card__info__socials">
                     <a href="${member.urlLinkedin}" target="_blank"">
-                        <i class="bi bi-linkedin fs-4"></i>
+                        <i class="bi bi-linkedin"></i>
                     </a>
                     <a href="${member.urlPortfolio}" target="_blank" class="cursor-pointer">
-                        <i class="bi bi-globe fs-4"></i>
+                        <i class="bi bi-globe"></i>
                     </a>
                 </div>
             </div>
         `;
-        
+
         cardsContainer.appendChild(card);
     });
 }
