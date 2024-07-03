@@ -17,6 +17,7 @@
     <!-- css -->
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../pages/styles/pages.css" />
+    <link rel="stylesheet" href="../pages/styles/pages2.css" />
   </head>
   <body class="overflow-x-hidden">
     <header id="inicio">
@@ -50,35 +51,51 @@
         </div>
       </nav>
     </header>
-    <section class="container my-5">
-      <div class="row mobile-first justify-content-center align-items-center">
-        <article class="col-6 d-flex justify-content-center align-items-center">
-          <img class="equipe_lima" src="../assets/images/equipe/image-vinicius.png" alt="Vinícius Lima - Idealizador do Projeto" />
-        </article>
-        <article class="col-6 content_equipe">
-          <h2 class="text-danger">Vinícius Lima</h2>
-          <h3>Idealizador do Projeto</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed 
-            turpis aliquam ipsum egestas suscipit id a nulla. Phasellus mattis viverra luctus.
-          </p>
-          <p>
-            Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
-            mus. Vestibulum molestie auctor diam, a cursus tortor consequat ac.
-          </p>
-          <span class="d-flex align-items-center gap-1">
-            <i class="bi bi-linkedin"></i>
-            <a href="https://www.linkedin.com/in/68vinicius/">Vinícius Lima</a>
-          </span>
-        </article>
+ 
+    <main class="py-5">
+
+      <div class="container pb-5">
+        <section class="creator-section">
+          <div class="creator-section__image">
+            <img src="../assets/images/equipe/image-vinicius.png" alt="">
+          </div>
+          <div class="creator-section__info">
+            <h2 class="text-danger mt-2">
+              Vinicius Lima
+            </h2>
+            <h3 class="fw-light fs-5">
+              Idealizador do Projeto
+            </h3>
+            <p class="mt-3 font-roboto">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed turpis aliquam ipsum egestas suscipit id a nulla. Phasellus mattis viverra luctus.
+            </p>
+            <p class="mt-2 font-roboto">
+              Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum molestie auctor diam, a cursus tortor consequat ac.
+            </p>
+            <a href="#">
+              <i class="bi bi-linkedin me-1"></i> Vinicius Lima
+            </a>
+          </div>
+        </section>
       </div>
-    </section>
-    <section class="bg-equipe" style="--background: linear-gradient(rgba(95, 2, 2, 0.8), rgba(95, 2, 2, 0.8)),  url('../../assets/images/equipe/equipe-bg.jpg')">
-      <h2 class="title-equipe"><span class="sub_title-equipe">Nome da Equipe</span> <strong>Criadores</strong> deste Site</h2> 
-        <div class="container my-5">
-          <div class="row d-flex align-items-center justify-content-center py-3" id="cardsContainer"></div>
+      
+
+      <section class="team-section py-5">
+        <div class="container">
+          <div class="team-section__title text-white">
+            <h5 class="fw-light">
+              Nome da Equipe
+            </h5>
+            <h4 class="fw-light">
+              <strong>Criadores</strong> deste Site
+            </h4>
+          </div>
+          <div class="team-section__card-container mt-4" id="teamCardContainer">
+          </div>
         </div>
-    </section>    
+      </section>
+
+    </main>
 
     <footer class="rodape">
       <div class="container container-fluid p-5">
