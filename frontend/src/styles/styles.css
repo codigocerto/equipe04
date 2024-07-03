@@ -278,12 +278,13 @@ header ul {
 
 .front-back {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .qa-dados-metodologias {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  margin: 40px 0 0 0;
 }
 
 .uiux {
@@ -291,21 +292,27 @@ header ul {
   width: 100%;
   max-width: 160px;
   color: #f2f2f2;
+  margin: 0 40px 0 0;
 }
 
-#uiux-carreiras {
+.uiux button {
+  display: flex;
+  margin: auto;
+}
+
+#carreiras {
   position: relative;
   width: 100%;
   z-index: 3;
 }
 
-#background-image-uiux {
+#background-image-carreiras {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/images/home/card-carreiras-ui.jpg");
+  /* background-image: url("../assets/images/home/card-carreiras-ui.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -315,8 +322,7 @@ header ul {
 
 .overlay-carreiras {
   position: absolute;
-  padding: 160px 17px 200px;
-  text-align: center;
+  /* padding: 160px 17px 200px; */
   top: 0;
   left: 0;
   width: 100%;
@@ -344,6 +350,43 @@ header ul {
   color: #f2f2f2;
 }
 
+.front {
+  height: 280px;
+  width: 100%;
+  /* max-width: 560px; */
+  color: #f2f2f2;
+  margin: 0 40px 0 0 ;
+}
+
+.back {
+  height: 280px;
+  width: 100%;
+  /* max-width: 360px; */
+  color: #f2f2f2;
+}
+
+.qa,
+.dados {
+  height: 240px;
+  width: 100%;
+  /* max-width: 260px; */
+  color: #f2f2f2;
+}
+
+.dados {
+  margin: 0 40px;
+}
+
+.metodologias {
+  height: 240px;
+  width: 100%;
+  /* max-width: 360px; */
+  color: #f2f2f2;
+}
+
+.container-profissoes {
+  width: 100%;
+}
 
 /* FOOTER DO HOME */
 
