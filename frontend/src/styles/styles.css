@@ -388,6 +388,7 @@ header ul {
   width: 100%;
 }
 
+
 /* FOOTER DO HOME */
 .linkedin {
   margin:.5rem .5rem .5rem 0;
@@ -399,6 +400,7 @@ header ul {
 .rodape h6 {
   color: var(--cor-primary-red);
   font-size: 1.125rem;
+  
 }
 
 .rodape a {
@@ -432,4 +434,7 @@ header ul {
   width: 50%;
    }
  
+   teste {
+    background-size: contain;
+   }
 } 
