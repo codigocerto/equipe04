@@ -388,8 +388,18 @@ header ul {
   width: 100%;
 }
 
-/* FOOTER DO HOME */
+/* Section Perguntas */
 
+.accordion-button::after {
+ background: url(/frontend/src/assets/images/home/seta.svg);
+ background-repeat: no-repeat;
+background-size: contain;
+}
+
+/* FOOTER DO HOME */
+.linkedin {
+  margin:.5rem .5rem .5rem 0;
+}
 .rodape p, a {
   color: var(--cor-primary-black);
 }
@@ -397,6 +407,7 @@ header ul {
 .rodape h6 {
   color: var(--cor-primary-red);
   font-size: 1.125rem;
+  
 }
 
 .rodape a {
@@ -418,3 +429,78 @@ header ul {
 .rodape i:hover {
   color: var(--cor-primary-red);
 }
+
+/* media queries */
+
+/* section Depoimentos - Testimonials */
+
+
+/* Section Faça Parte da Nossa Equipe */
+@media(max-width: 1200px){
+  #parteEquipe .row {
+    width: 750px!important;
+    margin: auto;
+ }
+
+  #parteEquipe .col-md-6 {
+    width: 350px;
+ }
+
+ #parteEquipe .col-md-5 {
+  width: 350px;
+  height: auto;
+  margin: 0!important;
+  }
+
+  #parteEquipe img{
+    width: 250px;
+   }
+
+   #parteEquipe button{
+   font-size: 12px;
+   }
+}
+
+@media(max-width: 768px){
+  #parteEquipe .row {
+    width: 600px!important;
+    margin: auto;
+ }
+
+  #parteEquipe .col-md-6 {
+    width: 250px;
+ }
+
+#parteEquipe .col-md-5 {
+  width: 330px;
+  height: auto;
+  margin: 0!important;
+  }
+
+  #parteEquipe img{
+    width: 300px;
+   }
+
+   #parteEquipe button{
+   font-size: 12px;
+   }
+}
+
+@media (max-width: 576px) {
+  #parteEquipe .row {
+    width: 350px!important;
+    justify-content: center;
+   }
+
+#parteEquipe .col-md-5 {
+ position: relative;
+ top:-40px
+   }
+ } 
+
+/* footer */
+@media (max-width: 576px) {
+ .container .col-12 {
+  width: 50%;
+   }
+} 
