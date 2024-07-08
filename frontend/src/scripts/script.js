@@ -46,3 +46,26 @@ const phoneMask = (value) => {
   value = value.replace(/(\d)(\d{4})$/,"$1-$2")
   return value
 }
+
+
+
+/* testimonials */
+
+const swiper = new Swiper('.js-testimonials-slider', {
+  grabCursor: true,
+  spaceBetween:30,
+  direction: 'horizontal',
+  loop:true,
+  pagination:{
+      el: '.js-testimonials-pagination',
+      clickable: true
+  },
+  autoplay: {
+      delay: 5000,
+    },
+  breakpoints:{
+      767:{
+          slidesPerView:2
+      }
+  }
+})

@@ -388,6 +388,70 @@ header ul {
   width: 100%;
 }
 
+/* section Depoimentos  */
+
+/* Testimonials */
+
+.testimonials-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  top: -320px;
+  z-index: 2;
+  position: relative;
+  margin-left: 390px;
+  height: 20px;
+  
+}
+
+.swiper-slide {
+  margin-right: 40px;
+  width: 360px !important;
+  height: 260px !important;
+}
+
+.testimonials-item {
+  box-shadow: inset;
+  background: #F5F5F5;
+ 
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.testimonials-item .info {
+  display: flex;
+  align-items: center;
+}
+
+.testimonials-item img{
+  max-width: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.testimonials-item .name {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color:var(--cor-primary-red);
+  line-height: 1.2;
+
+}
+.testimonials-item .job {
+  text-transform: capitalize;
+  color: #000000;
+ 
+}
+.testimonials-item p {
+  width: 300px;
+  margin-top: 20px;
+  color: var(--cor-primary-black);
+}
+
+
+
 /* Section Perguntas */
 
 .accordion-button::after {
@@ -431,8 +495,6 @@ background-size: contain;
 }
 
 /* media queries */
-
-/* section Depoimentos - Testimonials */
 
 
 /* Section Faça Parte da Nossa Equipe */
