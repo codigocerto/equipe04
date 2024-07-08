@@ -418,9 +418,7 @@ header ul {
   width: 750px !important;
   height: 260px !important;
 
-  
- 
-}
+  }
 
 
 .testimonials-item {
@@ -436,7 +434,8 @@ header ul {
 }
 
 .testimonials-item img{
-  max-width: 80px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   margin-right: 20px;
   vertical-align: middle;
