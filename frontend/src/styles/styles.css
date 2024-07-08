@@ -170,9 +170,17 @@ header ul {
   color: #000000;
 }
 
-.container-cards {
+/* .container-cards {
   height: 160px;
   width: 760px;
+} */
+
+#container-cards {
+  margin-right: 0px;
+  height: auto;
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card {
@@ -180,6 +188,7 @@ header ul {
   width: 160px;
   max-height: 160px;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  padding: 0;
 }
 
 .card img {
@@ -203,6 +212,10 @@ header ul {
 
 #sobre {
   background: linear-gradient(to bottom, #0B0B0BE5 40%, #F5F5F5 );
+}
+
+#container-sobre {
+  display: flex;
 }
 
 .container-sobre {
@@ -393,29 +406,26 @@ header ul {
 /* Testimonials */
 
 .testimonials-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: auto;
-  top: -320px;
-  z-index: 2;
   position: relative;
-  margin-left: 390px;
-  height: 20px;
-  
+  margin-left: -250px;
+ top: 10px;
 }
 
-.swiper-slide {
-  margin-right: 40px;
-  width: 360px !important;
+.testimonials-slider,
+.swiper-wrapper 
+ {
+
+  width: 750px !important;
   height: 260px !important;
+
+  
+ 
 }
+
 
 .testimonials-item {
   box-shadow: inset;
   background: #F5F5F5;
- 
   padding: 30px;
   border-radius: 8px;
 }
@@ -502,13 +512,13 @@ background-size: contain;
   #parteEquipe .row {
     width: 750px!important;
     margin: auto;
- }
+  }
 
   #parteEquipe .col-md-6 {
     width: 350px;
- }
+  }
 
- #parteEquipe .col-md-5 {
+  #parteEquipe .col-md-5 {
   width: 350px;
   height: auto;
   margin: 0!important;
@@ -516,11 +526,11 @@ background-size: contain;
 
   #parteEquipe img{
     width: 250px;
-   }
+  }
 
-   #parteEquipe button{
-   font-size: 12px;
-   }
+  #parteEquipe button{
+  font-size: 12px;
+  }
 }
 
 @media(max-width: 768px){
