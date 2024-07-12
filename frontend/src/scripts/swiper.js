@@ -1,16 +1,23 @@
 /* testimonials */
 
 const swiper = new Swiper('.js-testimonials-slider', {
-    
+    grabCursor: true,
     spaceBetween: 40,
-    loop:true,
+    slidesPerView:2,
+    direction: getDirection(),
     autoplay: {
         delay: 7000,
       },
-    breakpoints:{
-        767:{
-            slidesPerView:2
-        }
-    }
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection())
+        },
+      }
+      
   })
+  function getDirection() {
   
+    var direction = window.innerWidth >= 768 ? 'horizontal' : 'vertical';
+
+    return direction;
+  }
