@@ -82,8 +82,10 @@ header ul {
 
 #container-hero {
   position: relative;
-  background-image: url(../assets/images/home/bg-hero.jpg);
+  background-image: url(../assets/images/home/bg-hero.webp);
   height: 720px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #container-hero span {

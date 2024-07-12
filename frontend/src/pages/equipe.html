@@ -17,47 +17,46 @@
     <!-- css -->
     <link rel="stylesheet" href="../styles/styles.css" />
     <link rel="stylesheet" href="../pages/styles/pages.css" />
-    <link rel="stylesheet" href="../pages/styles/pages2.css" />
   </head>
-  <body class="overflow-x-hidden">
-    <header id="inicio">
-      <nav id="container-nav" class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-header container-fluid">
-          <div >
-            <img src="/frontend/src/assets/images/logo.png" class="img-fluid" alt="codigocerto" max-width="82" height="60">
-          </div>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a href="../../index.html">
+            <img src="/frontend/src/assets/images/logo.png" class="img-fluid logo-img" alt="codigocerto">
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
             <div class="collapse navbar-collapse justify-content-end text-center" id="navbarSupportedContent">
               <ul id="container-ul" class="navbar-nav" style="margin-top: 30px">
                 <li class="nav-item">
-                  <a class="nav-link text-dark" href="#sobre">Sobre</a>
+                  <a class="nav-link" href="#sobre">Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark" href="#carreira">Carreiras</a>
+                  <a class="nav-link" href="#carreira">Carreiras</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-dark" href="#depoimentos">Depoimentos</a>
+                  <a class="nav-link" href="#depoimentos">Depoimentos</a>
                 </li>
                 <li class="d-flex justify-content-center">
-                  <a href='../frontend/src/pages/termo-mentoria.html' class="btn-white text-decoration-none border border-danger text-black" type="button"  style="padding: 6px 16px;">Quero ser Mentor</a>
+                  <a href='./termo-mentoria.html' class="btn-white text-decoration-none border border-danger text-black" type="button"  style="padding: 6px 16px;">Quero ser Mentor</a>
                 </li>
                 <li class="d-flex justify-content-center">
-                  <a href='../frontend/src/pages/termo-voluntario.html' class="btn-black text-decoration-none" type="button" style="padding: 6px 6px;" >Quero ser Voluntário</a>
+                  <a href='./termo-voluntario.html' class="btn-black text-decoration-none" type="button" style="padding: 6px 16px;" >Quero ser Voluntário</a>
                 </li>
               </ul>
-           </div>
+          </div>
         </div>
       </nav>
     </header>
- 
-    <main class="py-5">
+
+    <main class="pt-5">
 
       <div class="container pb-5">
         <section class="creator-section">
           <div class="creator-section__image">
-            <img src="../assets/images/equipe/image-vinicius.png" alt="">
+            <img src="../assets/images/equipe/image-vinicius.webp" alt="">
           </div>
           <div class="creator-section__info">
             <h2 class="text-danger mt-2">
@@ -72,7 +71,7 @@
             <p class="mt-2 font-roboto">
               Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum molestie auctor diam, a cursus tortor consequat ac.
             </p>
-            <a href="#">
+            <a target="_blank" href="https://www.linkedin.com/in/68vinicius/">
               <i class="bi bi-linkedin me-1"></i> Vinicius Lima
             </a>
           </div>
@@ -80,7 +79,7 @@
       </div>
       
 
-      <section class="team-section py-5">
+      <section class="team-section">
         <div class="container">
           <div class="team-section__title text-white">
             <h5 class="fw-light">
@@ -97,50 +96,148 @@
 
     </main>
 
-    <footer class="rodape">
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__container__item">
+          <img src="/frontend/src/assets/images/logo.png" class="img-fluid logo-img" alt="codigocerto">
+          <p>
+            Promover a inovação e o desenvolvimento digital para todos.
+          </p>
+        </div>
+        <div class="footer__container__item footer__container__item--border">
+          <h4>Menu</h4>
+          <ul class="footer__container__item__list">
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                Início
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                Sobre
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                Carreiras
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                Depoimentos
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                Perguntas Frequentes
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer__container__item footer__container__item--border">
+          <h4>Links úteis</h4>
+          <ul class="footer__container__item__list">
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                Criadores
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                Fale Conosco
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                Política de Privacidade
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer__container__item footer__container__item--border">
+          <h4>Redes Sociais</h4>
+          <ul class="footer__container__item__list--icons">
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                <i class="bi bi-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer__container__item__list__link">
+                <i class="bi bi-discord"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="text-center last-footer">
+        <div class="container">
+          <p>Copyright © 2024 - Código Certo - Todos os direitos reservados</p>
+          <span>
+            Desenvolvido pela equipe <strong>{Nome}</strong>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <footer class="rodape">
       <div class="container container-fluid p-5">
         <div class="row text-light mb-5 d-flex flex-row justify-content-between">
-         <div class="col-12 col-md-3 col-6 col-sm-6 mb-5">
-          <img src="/frontend/src/assets/images/logo.png" class="img-fluid mb-3" alt="codigocerto" width="110" height="80">
-          <p class="font-roboto w-75" style="font-size: 0.875rem;">Promover a inovação e o desenvolvimento digital para todos.</p>
+          <div class="col-12 col-md-3 col-6 col-sm-6 mb-5">
+            <img src="/frontend/src/assets/images/logo.png" class="img-fluid logo-img" alt="codigocerto">
+            <p class="font-roboto w-75" style="font-size: 0.875rem;">Promover a inovação e o desenvolvimento digital para todos.</p>
         </div>
         <div class="col-12 col-md-3 col-6 col-sm-6 border-start border-2 border-opacity-25" style="border-color: var(--cor-border-horizontal-footer) !important;">
-         <nav>
-          <ul class="ps-3">
-            <h6 class="font-rubik mb-3">Menu</h6>
-             <li><a class="tfont-roboto" href="#inicio">Início</a></li>
-               <li><a class="font-roboto" href="#sobre">Sobre</a></li>
-                <li><a class="font-roboto" href="#carreira">Carreiras</a></li>
-                 <li><a class="font-roboto" href="#depoimentos">Depoimentos</a></li>
-              <li><a class="font-roboto" href="#perguntas">Perguntas Frequentes</a></li>
-            </ul>
-         </nav>
+          <nav>
+            <ul class="ps-3">
+              <h6 class="font-rubik mb-3">Menu</h6>
+              <li><a class="tfont-roboto" href="#inicio">Início</a></li>
+                <li><a class="font-roboto" href="#sobre">Sobre</a></li>
+                  <li><a class="font-roboto" href="#carreira">Carreiras</a></li>
+                  <li><a class="font-roboto" href="#depoimentos">Depoimentos</a></li>
+                <li><a class="font-roboto" href="#perguntas">Perguntas Frequentes</a></li>
+              </ul>
+          </nav>
         </div>
         <div class="col-12 col-md-3 col-6 col-sm-6 border-start border-2 border-opacity-25" style="border-color: var(--cor-border-horizontal-footer) !important;">
           <nav>
             <ul class="ps-3">
               <h6 class="font-rubik mb-3">Links Úteis </h6>
-               <li><a class="font-roboto" href="">Criadores</a></li>
-                 <li><a class="tfont-roboto" href="">Fale Conosco</a></li>
-                  <li><a class="font-roboto" href="">Política de Privacidade</a></li>
-               </ul>
+                <li><a class="font-roboto" href="">Criadores</a></li>
+                <li><a class="tfont-roboto" href="">Fale Conosco</a></li>
+                <li><a class="font-roboto" href="">Política de Privacidade</a></li>
+            </ul>
             </nav>
-           </div>
+        </div>
           <div class="col-12 col-md-3 col-6 col-sm-6 border-start border-2 border-opacity-25 ps-4" style="border-color: var(--cor-border-horizontal-footer) !important;">
             <h6 class="font-rubik mb-3">Redes Sociais</h6>
-             <nav class="d-flex justify-content-between w-50">
-              <a class="linkedin" href="https://www.linkedin.com/company/codigocerto/mycompany" class="text-secondary">
-                <i class="bi bi-linkedin fs-4"></i>
-              </a>
-              <a class="m-2" href="https://github.com/codigocerto" class="text-secondary">
-                <i class="bi bi-github fs-4"></i>
-              </a>
-              <a class="m-2" href="https://chat.whatsapp.com/CDJL6tRT5apLRXW5PWqYLe" class="text-secondary">
-                <i class="bi bi-whatsapp fs-4"></i>
-              </a>
-              <a class="m-2"href="https://discord.gg/YkcWcPJj" class="text-secondary">
-                <i class="bi bi-discord fs-4"></i>
-              </a>
+              <nav class="d-flex justify-content-between w-50">
+                <a class="linkedin" href="https://www.linkedin.com/company/codigocerto/mycompany" class="text-secondary">
+                  <i class="bi bi-linkedin fs-4"></i>
+                </a>
+                <a class="m-2" href="https://github.com/codigocerto" class="text-secondary">
+                  <i class="bi bi-github fs-4"></i>
+                </a>
+                <a class="m-2" href="https://chat.whatsapp.com/CDJL6tRT5apLRXW5PWqYLe" class="text-secondary">
+                  <i class="bi bi-whatsapp fs-4"></i>
+                </a>
+                <a class="m-2"href="https://discord.gg/YkcWcPJj" class="text-secondary">
+                  <i class="bi bi-discord fs-4"></i>
+                </a>
           </nav>
         </div>
       </div>
@@ -151,7 +248,8 @@
         <p class="text-light text-center fw-light font-roboto mb-4" style="color: var(--cor-secondary-gray); font-size: 0.875rem !important;">Desenvolvido pela <span style="color: var(--cor-primary-red);">equipe {nome}</span></p>
       </div>
     </div>
-      </footer>
+  </footer> -->
+
     <!-- script -->
     <script src="../scripts/script.js"></script>
     <script src="../scripts/renderTeamCards.js"></script>
