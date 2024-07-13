@@ -11,8 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  </head>
-  <body class="overflow-x-hidden">
+
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+   </head>
+  <body class="overflow-x-hidden cor">
     <section class="overlay" >
       <div id="container-hero">
         <div class="background-image"></div>
@@ -94,6 +101,7 @@
       </div>
     </section>
     
+
     <!--INICIO DA SESSÃO SOBRE-->
 
     <section id="sobre">
@@ -191,20 +199,105 @@
     
     <!--INICIO DA SESSÃO DEPOIMENTOS-->
 
-    <section id="depoimentos" style="padding: 0 140px 0 140px;">
-      <div class="container">
-        <div class="row text-light d-flex">
-          <div class="col-12 w-50 p-0 col-md-8">
-            <img src="./src/assets/images/home/depoimentos-imagem.webp" class="img-fluid" alt="codigocerto" width="561" height="497" style="position: relative;top: -60px;border-radius: 10px;max-width:100%">
-          </div>
-          <div class="col-12 w-50 p-5 col-md-4 ">
-            <h2 class="fs-4 text-danger text- text-sm-end">Depoimentos</h2>
-            <h3 class="fs-2 text-dark text-end p-0 mt-2">Histórias de <span class="text-danger">Sucesso</span> e <span class="text-danger">Transformação</span> </h3>
-          </div>
-        </div>
-      </div>  
-    </section>
-    
+
+    <section id="depoimentos">
+       <div class="container">
+               <div class="row text-light d-flex">
+                     <div class="col-12 w-50 p-0 col-md-8">
+                      <img src="./src/assets/images/home/depoimentos-imagem.webp" class="img-fluid" alt="codigocerto" width="561" height="497">
+                      </div>
+                    <div class="col-12 w-50 p-5 col-md-4">
+                      <h2>Depoimentos</h2>
+                      <h3>Histórias de <span> Sucesso</span> <br> e <span>Transformação</span> </h3>
+
+                       <!-- Testimonials -->
+  
+        
+                    <div class="testimonials-content">
+                      <div class="swiper testimonials-slider js-testimonials-slider">
+                          <div class="swiper-wrapper">
+                                <div class="swiper-slide testimonials-item">
+                                  <p>Trabalhar na <strong>CodigoCerto</strong> é uma experiência extremamente gratificante e enriquecedora, compartilhamos conhecimentos e habilidades.  </p>
+                                       <div class="info"><img src="./src/assets/images/home/h1.png" alt="">
+                                          <div class="text-box">
+                                              <h4 class="name">Carlos Santana</h4>
+                                              <span class="job">Back-End</span>
+                                          </div>
+                                       </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                  <p>Crescimento Profissional e Pessoal, aprendizado Contínuo, fora que proporciona oportunidades valiosas de networking. </p>
+                                       <div class="info"><img src="./src/assets/images/home/m1.png" alt="">
+                                          <div class="text-box">
+                                              <h4 class="name">Maria Eduarda</h4>
+                                              <span class="job">UI/UX Designer</span>
+                                          </div>
+                                       </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                  <p>Na <strong>CodigoCerto</strong>  aprimoramos as habilidades técnicas, habilidades interpessoais, como comunicação e trabalho em equipe. </p>
+                                       <div class="info"><img src="./src/assets/images/home/h2.png" alt="">
+                                          <div class="text-box">
+                                              <h4 class="name">Douglas Prado</h4>
+                                              <span class="job">Full-Stack</span>
+                                          </div>
+                                       </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                  <p>Temos a oportunidade de trabalhar com tecnologias novas, seguir boas práticas e colaborar com desenvolvedores experientes. </p>
+                                       <div class="info"><img src="./src/assets/images/home/g1.png" alt="">
+                                          <div class="text-box">
+                                              <h4 class="name">Lucas Pimentel</h4>
+                                              <span class="job">Back-End</span>
+                                          </div>
+                                       </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                  <p>Aqui nessa comunidade o trabalho realizado pode beneficiar muitas pessoas ao redor do mundo é uma grande motivação.</p>
+                                       <div class="info"><img src="./src/assets/images/home/g2.png" alt="">
+                                          <div class="text-box">
+                                              <h4 class="name">Ana Cecília</h4>
+                                              <span class="job">UI/UX Designer</span>
+                                          </div>
+                                       </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                  <p>A colaboração e o espírito de ajuda mútua são aspectos altamente valorizados. Há um grande  apoio entre os membros da comunidade. </p>
+                                       <div class="info"><img src="./src/assets/images/home/g3.png" alt="">
+                                          <div class="text-box">
+                                              <h4 class="name">Fernando Luiz</h4>
+                                              <span class="job">Front-End</span>
+                                          </div>
+                                       </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                  <p>Muitos voluntários precisam equilibrar suas contribuições com outras responsabilidades, como trabalho e família, o que pode ser desafiador. </p>
+                                       <div class="info"><img src="./src/assets/images/home/m2.png" alt="">
+                                          <div class="text-box">
+                                              <h4 class="name">Ana Clara</h4>
+                                              <span class="job">Quality Assurance</span>
+                                          </div>
+                                       </div>
+                                </div>
+                                <div class="swiper-slide testimonials-item">
+                                  <p>A sensação de realização pessoal ao completar uma tarefa ou resolver um problema difícil é uma recompensa por si só. </p>
+                                       <div class="info"><img src="./src/assets/images/home/h3.png" alt="">
+                                          <div class="text-box">
+                                              <h4 class="name">Josias Franco</h4>
+                                              <span class="job">Analista de Dados</span>
+                                          </div>
+                                       </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+          
+                    </div>
+                  </div>
+                </div>
+        </section>
+
+      
     <!--INICIO DA SESSÃO PERGUNTAS-->
 
     <section id="perguntas" style=" padding-bottom: 50px; background: #d9d9d9;">
@@ -229,8 +322,8 @@
             <button class="accordion-button border border-top-0 border-end-0 border-start-0 border-bottom-1 border-danger bg-light text-black bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Quais são os requisitos para participar como desenvolvedor voluntário?</button>
             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <P class="fs-6">Conhecimento técnico, compromisso e disponibilidade, habilidades de Colaboração, ter uma afinidade com os valores e objetivos da organização e  seguir as diretrizes estabelecidas pela organização, como políticas de privacidade, código de conduta, procedimentos de segurança da informação.</P>
-                <p class=" fs-6 text-danger">Adorei, quer fazer parte.</p>
+                <P class="fs-6 text-black text-start">Conhecimento técnico, compromisso e disponibilidade, habilidades de Colaboração, ter uma afinidade com os valores e objetivos da organização e  seguir as diretrizes estabelecidas pela organização, como políticas de privacidade, código de conduta, procedimentos de segurança da informação.</P>
+                <p class=" fs-6 text-danger">Adorei, quero fazer parte.</p>
               </div>
             </div>
           </div>
@@ -239,7 +332,7 @@
             <button class="accordion-button collapsed border border-top-0 border-end-0 border-start-0 border-bottom-1 border-danger bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Há possibilidade de contratação após o período de voluntariado?</button>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <P class="fs-6">Sim,durante seu tempo como voluntário, você terá a oportunidade de demonstrar suas habilidades técnicas, capacidade de trabalho em equipe, iniciativa e comprometimento com os objetivos da organização.</P>
+                <P class="fs-6 text-black text-start">Sim,durante seu tempo como voluntário, você terá a oportunidade de demonstrar suas habilidades técnicas, capacidade de trabalho em equipe, iniciativa e comprometimento com os objetivos da organização.</P>
               </div>
             </div>
           </div>
@@ -248,7 +341,7 @@
             <button class="accordion-button collapsed border border-top-0 border-end-0 border-start-0 border-bottom-1 border-danger bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Posso participar do programa remotamente?</button>
             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <P class="fs-6">Sim, a capacidade de trabalhar remotamente oferece flexibilidade tanto para os voluntários quanto para as organizações, permitindo que pessoas de diferentes partes do mundo contribuam com seus conhecimentos e habilidades.</P>
+                <P class="fs-6 text-black text-start">Sim, a capacidade de trabalhar remotamente oferece flexibilidade tanto para os voluntários quanto para as organizações, permitindo que pessoas de diferentes partes do mundo contribuam com seus conhecimentos e habilidades.</P>
               </div>
             </div>
             </div>
@@ -257,7 +350,7 @@
               <button class="accordion-button collapsed border border-top-0 border-end-0 border-start-0 border-bottom-1 border-danger bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Quanto tempo preciso dedicar ao programa?</button>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <P class="fs-6">A quantidade de tempo que você precisa dedicar a um programa de voluntariado pode variar significativamente dependendo das necessidades do projeto, das suas próprias habilidades e da disponibilidade pessoal.</P>
+                  <P class="fs-6 text-black text-start">A quantidade de tempo que você precisa dedicar a um programa de voluntariado pode variar significativamente dependendo das necessidades do projeto, das suas próprias habilidades e da disponibilidade pessoal.</P>
                 </div>
               </div>
             </div>
@@ -266,7 +359,7 @@
               <button class="accordion-button collapsed border border-top-0 border-end-0 border-start-0 border-bottom-1 border-danger bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Quais são ás áreas de atuação disponíveis?</button>
               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <P class="fs-6">UI/UX Design, Front-End, Metodologias Ágeis, Liderança, Back-End, Dados, Quality Assurance, etc.</P>
+                  <P class="fs-6 text-black text-start">UI/UX Design, Front-End, Metodologias Ágeis, Liderança, Back-End, Dados, Quality Assurance, etc.</P>
                 </div>
               </div>
             </div>
@@ -275,7 +368,7 @@
               <button class="accordion-button collapsed border border-top-0 border-end-0 border-start-0 border-bottom-1 border-danger bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">O programa voluntariado é gratuito?</button>
               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <P class="fs-6">Sim, acesso livre e gratuito para todos os participantes. Adapte sua participação conforme sua disponibilidade, foco em aprendizado prático com projetos reais.</P>
+                  <P class="fs-6 text-black text-start">Sim, acesso livre e gratuito para todos os participantes. Adapte sua participação conforme sua disponibilidade, foco em aprendizado prático com projetos reais.</P>
                 </div>
               </div>
               <div class="accordion-item p-2">
@@ -284,8 +377,7 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                 </div>
               </div>
-            
-          </div>
+            </div>
         </div>
       </div>
     </section>
@@ -369,5 +461,10 @@
     </footer>
   <script src="../frontend/src/scripts/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!--swiper-->
+  <script src="https://unpkg.com/swiper@11.1.4/swiper-bundle.min.js"></script>
+  <script src="/frontend/src/scripts/swiper.js"></script>
+  
 </body>
 </html>
