@@ -170,12 +170,10 @@
 
 .front-back {
   display: flex;
-  /* justify-content: space-between; */
 }
 
 .qa-dados-metodologias {
   display: flex;
-  /* justify-content: space-between; */
   margin: 40px 0 0 0;
 }
 
@@ -214,7 +212,6 @@
 
 .overlay-carreiras {
   position: absolute;
-  /* padding: 160px 17px 200px; */
   top: 0;
   left: 0;
   width: 100%;
@@ -245,7 +242,6 @@
 .front {
   height: 280px;
   width: 100%;
-  /* max-width: 560px; */
   color: #f2f2f2;
   margin: 0 40px 0 0 ;
 }
@@ -253,7 +249,6 @@
 .back {
   height: 280px;
   width: 100%;
-  /* max-width: 360px; */
   color: #f2f2f2;
 }
 
@@ -261,7 +256,6 @@
 .dados {
   height: 240px;
   width: 100%;
-  /* max-width: 260px; */
   color: #f2f2f2;
 }
 
@@ -272,7 +266,6 @@
 .metodologias {
   height: 240px;
   width: 100%;
-  /* max-width: 360px; */
   color: #f2f2f2;
 }
 
@@ -374,6 +367,319 @@ background-size: contain;
 }
 
 /* media queries */
+
+/* SESSÃO HERO */
+
+@media (max-width:940px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+}
+
+/* SESSÃO ABAIXO DO HERO */
+
+@media(max-width: 1400px) {
+  .abaixo-do-hero {
+    height: auto;
+    padding: 40px 60px;
+  }
+}
+
+@media(max-width: 1240px) {
+  .infos-abaixo-do-hero {
+    padding: 20px 0 0 20px ;
+    width: 200px;
+  }
+
+  .infos-abaixo-do-hero p {
+    font-size: 14px;
+  }
+
+  .card {
+    height: 160px;
+    width: 130px;
+    margin: 0;
+  }
+
+  .card img {
+    margin: 20px 32px 0;
+  }
+
+  .card h5 {
+    font-size: 14px;
+  }
+
+  #container-cards {
+    width: 600px;
+    margin: auto;
+  }
+}
+
+@media (max-width:940px) {
+  .abaixo-do-hero {
+    padding: 40px;
+  }
+  .container-abaixo-do-hero {
+    display: block;
+  }
+
+  #container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .infos-abaixo-do-hero {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .card {
+    margin: auto;
+  }
+
+  #container-cards {
+    width: auto;
+    gap: 20px;
+  }
+}
+
+@media(max-width: 768px) {
+  #container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* SESSÃO SOBRE */
+
+@media(max-width: 1400px) {
+  .container-sobre {
+    padding: 40px 60px 0 60px;
+  }
+
+  #sobre img {
+    padding-top: 100px;
+    height: 561px;
+    width: 461px;
+  }
+
+  .container-sobre h6 {
+    padding: 100px 0 0;
+  }
+}
+
+@media(max-width: 940px) {
+  .container-sobre {
+    padding: 40px 40px 0 40px;
+    height: auto;
+  }
+
+  .container-sobre h6 {
+    font-size: 16px;
+    padding: 100px 0 0;
+  }
+
+  .container-sobre h4 {
+    font-size: 24px;
+    width: auto;
+  }
+
+  .container-sobre span {
+    font-size: 24px;
+  }
+
+  .container-sobre p {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+
+  #container-sobre {
+    flex-wrap: wrap-reverse;
+    text-align: center;
+  }
+
+  #container-sobre-img {
+    margin: auto;
+  }
+
+  #container-sobre-img img {
+    height: 400px !important;
+  }
+
+  #container-sobre-texto {
+    margin: auto;
+  }
+
+  .hero__container__btn {
+    margin: auto;
+    font-size: 12px !important;
+    padding: 8px 16px !important;
+  }
+}
+
+/* SESSÃO CARREIRAS */
+
+@media (max-width:940px) {
+  .container-carreiras {
+    height: auto;
+  }
+
+  .subtitulo-carreiras h2 {
+    font-size: 16px;
+  }
+
+  .subtitulo-carreiras h3, span {
+    font-size: 24px;
+    width: auto;
+  }
+
+  .container-carreiras {
+    padding: 40px;
+  }
+
+  .container-carreiras-profissoes {
+    display: block;
+  }
+
+  .uiux {
+    height: 180px;
+    min-width: 100%;
+    margin-bottom: 40px ;
+  }
+
+  .uiux h3 {
+    margin-top: 16px;
+  }
+
+  .uiux .overlay-carreiras{
+    max-height: 180px;
+    max-width: 100%;
+    padding: 0 !important;
+  }
+
+  .front-back {
+    display: block;
+  }
+
+  .front {
+    height: 180px;
+    min-width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .front h3 {
+    margin-top: 16px;
+  }
+
+  .front p {
+    width: 100% !important;
+    padding: 0 16px;
+  }
+
+  .front .overlay-carreiras {
+    height: 180px;
+    min-width: 100%;
+    margin-bottom: 40px ;
+    padding: 0 !important;
+  }
+
+  .back {
+    height: 180px;
+    min-width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .back .overlay-carreiras {
+    height: 180px;
+    min-width: 100%;
+    margin-bottom: 40px ;
+    padding: 0 !important;
+  }
+
+  .back h3 {
+    margin-top: 16px;
+  }
+
+  .back p {
+    width: 100% !important;
+    padding: 0 16px;
+  }
+
+  .qa {
+    height: 180px;
+    min-width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .qa .overlay-carreiras {
+    height: 180px;
+    min-width: 100%;
+    margin-bottom: 40px ;
+    padding: 0 !important;
+  }
+
+  .qa h3 {
+    margin-top: 16px;
+  }
+
+  .qa p {
+    max-width: 100% !important;
+    padding: 0 16px;
+  }
+
+  .dados {
+    height: 180px;
+    min-width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .dados .overlay-carreiras {
+    height: 180px;
+    min-width: 100%;
+    margin-bottom: 40px ;
+    padding: 0 !important;
+  }
+
+  .dados h3 {
+    margin-top: 16px;
+  }
+
+  .dados p {
+    max-width: 100% !important;
+    padding: 0 16px;
+  }
+
+  .metodologias {
+    height: 180px;
+    min-width: 100%;
+    margin: 40px 0 0 0;
+    text-align: center;
+  }
+
+  .metodologias .overlay-carreiras {
+    height: 180px;
+    min-width: 100%;
+    margin-bottom: 40px ;
+    padding: 0 !important;
+  }
+
+  .metodologias h3 {
+    margin-top: 16px;
+  }
+
+  .metodologias p {
+    max-width: 100% !important;
+    padding: 0 16px;
+  }
+
+  .qa-dados-metodologias {
+    display: block;
+  }
+}
 
 /* section Depoimentos  */
 
@@ -547,7 +853,7 @@ background-size: contain;
 /* section Depoimentos  */
 
 #depoimentos {
-  padding: 0 40px 0 40px;
+  padding: 0 40px 0 40px !important;
 }
 
 #depoimentos .col-md-4 {
