@@ -1161,7 +1161,7 @@ height: 200px;
   margin-top: 24px;
 }
 
-.btn-saiba-mais:hover {
+.hero__container__btn:hover {
   background: linear-gradient(to right, #e53939, #ffa8a7);
 }
 
