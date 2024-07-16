@@ -1148,6 +1148,14 @@ height: 200px;
  
  }
 
+ @media (max-width: 576px) {
+
+  #perguntas .accordion-button {
+  
+    line-height: 28px;
+}
+
+ }
 
 /* NOVOS ELEMENTOS - HEADER/ HERO & FOOTER */
 
