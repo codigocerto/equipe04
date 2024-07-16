@@ -187,9 +187,20 @@ a {
   flex-direction: column;
 }
 
+.creator-section__info > h3 {
+  font-size: 18px;
+  font-weight: 100;
+  margin: -2px 0 16px 0;
+}
+
 .creator-section__info p {
   font-size: 14px;
   line-height: 1.4em;
+}
+
+.creator-section__info a {
+  font-size: 18px;
+  color: var(--cor-primary-red);
 }
 
 .creator-section__info a:hover,
@@ -197,10 +208,6 @@ a {
   color: var(--cor-primary-black);
 }
 
-.creator-section__info i {
-  font-size: 24px;
-  color: var(--cor-primary-red);
-}
 
 .team-section {
   background-color: var(--cor-primary-red);
