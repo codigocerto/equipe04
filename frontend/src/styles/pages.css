@@ -211,7 +211,7 @@ a {
 
 .team-section {
   background-color: var(--cor-primary-red);
-  background-image: url('../../assets/images/equipe/equipe-bg.webp');
+  background-image: url('../assets/images/equipe/equipe-bg.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

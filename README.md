@@ -17,5 +17,3 @@
 ## ✨ Contribuidores
 
 Agradecemos a todos os nossos colaboradores e voluntários que tornam esta iniciativa possível.
-
-
