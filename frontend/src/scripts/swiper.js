@@ -17,7 +17,7 @@ const swiper = new Swiper('.js-testimonials-slider', {
   })
   function getDirection() {
   
-    var direction = window.innerWidth >= 768 ? 'horizontal' : 'vertical';
+    let direction = window.innerWidth >= 768 ? 'horizontal' : 'vertical';
 
     return direction;
   }
