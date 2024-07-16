@@ -510,11 +510,11 @@ background-size: contain;
     margin: auto;
   }
 
-  .hero__container__btn {
+  /* .hero__container__btn {
     margin: auto;
     font-size: 12px !important;
     padding: 8px 16px !important;
-  }
+  } */
 }
 
 /* SESSÃO CARREIRAS */
@@ -528,7 +528,8 @@ background-size: contain;
     font-size: 16px;
   }
 
-  .subtitulo-carreiras h3, span {
+  .subtitulo-carreiras h3,
+  .subtitulo-carreiras span {
     font-size: 24px;
     width: auto;
   }
