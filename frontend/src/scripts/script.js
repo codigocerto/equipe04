@@ -11,6 +11,13 @@ function aceitarTermo() {
   }
 }
 
+function enviarTermoVoluntario() {
+  window.location.href = '../pages/form-voluntario.html';
+}
+
+function enviarTermoMentor() {
+  window.location.href = '../pages/form-mentoria.html';
+}
 
 //  validação bootstrap
 (() => {
