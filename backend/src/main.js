@@ -1,10 +1,12 @@
-const express = require('express');
+const express = require("express");
 const api = express();
-const env = require('./env')
+const env = require("./env");
+const routes = require("./routes");
 
-const sendMailController  = require('./controllers/sendMail')
+api.use(express.json());
 
-api.use(express.json())
-api.post('/send-mail', sendMailController)
+api.use(routes);
 
-api.listen(env.PORT, () => console.log(`Back-End running at ${env.PORT}`))
+api.listen(env.PORT, () => {
+  console.log(`Servidor rodando na porta: ${env.PORT}`);
+});

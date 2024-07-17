@@ -10,27 +10,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Users {
-  id        Int        @id @default(autoincrement())
-  nome      String
-  email     String     @unique
-  UserInfos UserInfos?
-
-  @@map("users")
-}
-
-model UserInfos {
-  id               Int     @id @default(autoincrement())
+model User {
+  id               Int      @id @default(autoincrement())
+  nome             String
+  email            String   @unique
   pais             String
   funcaoPretendida String
   disponibilidade  String
   senioridade      String
   linkedin         String
   liderar          Boolean
-  experiencia      Int?    @default(0)
-  newsletter       Boolean
-  user             Users   @relation(fields: [userId], references: [id])
-  userId           Int     @unique
+  experiencia      Int?     @default(0)
+  newsletter       Boolean  @default(true)
+  createdAt        DateTime @default(now())
 
-  @@map("user_infos")
+  @@map("users")
 }
