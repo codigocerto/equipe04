@@ -1,0 +1,326 @@
+:root {
+  --cor-primary-black: #000000;
+  --cor-primary-red: #E53939;
+  --cor-primary-white: #FFFFFF;
+  --cor-input-bg: #f2f2f2;
+  --cor-input-placeholder: #272727;
+  --cor-secondary-gray: #f5f5f5;
+  --cor-tertiary-gray: #d9d9d9;
+  --cor-line: rgba(0,0,0,0.2);
+  --cor-border-horizontal-footer: rgba(187, 1, 1, 0.20);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.col-3 {
+  width: 20%;
+}
+
+.nav-term {
+  position: relative;
+  background: linear-gradient(
+    279.98deg,
+    #e53939 0%,
+    #b22c2c 48.66%,
+    #7f2020 100%
+  );
+  height: 260px;
+}
+
+.nav-term > nav > a {
+  text-decoration: none;
+}
+  
+.nav-term > nav > a:hover{
+  color: var(--cor-primary-black);
+}
+
+.main-forms {
+  position: relative;
+  z-index: 1;
+}
+
+.signup {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.modal-backdrop {
+  z-index: -2;
+}
+
+.modal__text {
+  font-size: 12px;
+  
+}
+
+.signup__container {
+  background-color: var(--cor-tertiary-gray);
+  padding: 60px;
+  border-radius: 6px;
+}
+
+.signup__container__page { 
+  position: relative;
+}
+
+.signup__container__page-icon {
+  font-size: 28px;
+}
+
+.signup__container__page-line {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup__container__page-line > span {
+  background-color: var(--cor-line);
+  height: 1px;
+  content: "";
+  width: 40%;
+}
+
+.signup__container__form-input {
+  font-size: 12px;
+  padding: 14px;
+  background-color: var(--cor-input-bg);
+  color: var(--cor-input-placeholder);
+}
+
+.signup__container__form-input::placeholder {
+  color: var(--cor-input-placeholder);
+}
+
+
+.signup__container__form-radio input {
+  display: none;
+}
+
+.signup__container__form-radio label {
+  font-size: 12px;
+}
+
+.signup__container__form-radio input + label:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  background-color: var(--cor-input-bg);
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+.signup__container__form-radio input:checked + label:before {
+  background-color: var(--cor-primary-red)
+}
+
+.signup__container__form-btn {
+  background-color: var(--cor-primary-red);
+  padding: 10px 16px;
+  color: var(--cor-primary-white);
+  border-radius: 8px;
+}
+
+.signup__container__form-btn:hover {
+  border: 1px solid var(--cor-primary-red);
+  padding: 10px 16px;
+  color: var(--cor-primary-red);
+}
+
+
+li {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.creator-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.creator-section__image {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creator-section__image > img {
+  display: block;
+  max-width: 480px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.creator-section__info {
+  display: flex;
+  max-width: 460px;
+  width: 100%;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.creator-section__info p {
+  font-size: 14px;
+  line-height: 1.4em;
+}
+
+.creator-section__info a:hover,
+.creator-section__info i:hover {
+  color: var(--cor-primary-black);
+}
+
+.creator-section__info i {
+  font-size: 24px;
+  color: var(--cor-primary-red);
+}
+
+.team-section {
+  background-color: var(--cor-primary-red);
+  background-image: url('../../assets/images/equipe/equipe-bg.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0 100px 0;
+}
+
+.team-section__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.team-section__card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.member-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--cor-primary-white);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.member-card > img {
+  max-width: 180px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.member-card__info {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.member-card__info__name {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.member-card__info__name > small{
+  font-size: 12px;
+}
+
+.member-card__info__socials {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.member-card__info__socials i {
+  font-size: 24px;
+  color: var(--cor-primary-red);
+}
+
+.member-card__info__socials i:hover {
+  color: var(--cor-primary-black);
+}
+
+@media (max-width: 639px) {
+  .team-section__card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .signup__container__form-radio {
+    margin-bottom: 8px;
+  }
+
+  .signup__container {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .creator-section {
+    grid-template-columns: 1fr;
+  }
+
+  .creator-section__info {
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1160px) {
+  .member-card__info {
+    flex-wrap: wrap;
+  }
+
+  .member-card__info__name {
+    align-items: center;
+    text-align: center;
+  }
+
+  .member-card__info__socials {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .signup__container__page { 
+    margin-top: 24px;
+  }
+}

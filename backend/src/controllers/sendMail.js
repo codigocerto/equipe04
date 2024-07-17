@@ -1,9 +1,8 @@
-const { z } = require('zod')
-const prisma = require('../configs/prisma')
-const mailProvider = require('../mailProvider/mailProvider')
+const { z } = require("zod");
+const prisma = require("../configs/prisma");
+const mailProvider = require("../mailProvider/mailProvider");
 
 const sendMailController = async (request, response) => {
-
   const userSchema = z.object({
     nome: z.string().min(3),
     email: z.string().email(),
@@ -14,11 +13,14 @@ const sendMailController = async (request, response) => {
     linkedin: z.string(),
     liderar: z.boolean(),
     experiencia: z.number().optional(),
-  })
+    newsletter: z.boolean(),
+  });
 
-  const user = userSchema.parse(request.body)
+  const user = userSchema.parse(request.body);
 
-  const { id } = await prisma.users.create({ data: { nome: user.nome, email: user.email } })
+  const { id } = await prisma.users.create({
+    data: { nome: user.nome, email: user.email },
+  });
   await prisma.userInfos.create({
     data: {
       userId: id,
@@ -29,13 +31,13 @@ const sendMailController = async (request, response) => {
       linkedin: user.linkedin,
       liderar: user.liderar,
       experiencia: user.experiencia,
-    }
-  })
+      newsletter: user.newsletter,
+    },
+  });
 
-  mailProvider(user.email, 'teste', `<h1>teste</h1>`)
+  mailProvider(user.email, "teste", `<h1>teste</h1>`);
 
-  return response.status(201).send()
+  return response.status(201).send();
+};
 
-}
-
-module.exports = sendMailController
+module.exports = sendMailController;
