@@ -678,7 +678,7 @@
 @media (max-width: 1440px) {
 
   #depoimentos {
-    padding: 0 190px 0 190px;
+    padding: 0 220px 0 210px;
   }
   
   #depoimentos .col-md-4 {
@@ -706,7 +706,7 @@
   .testimonials-content {
    position: relative;
    margin-left: -140px;
-   top: 74px;
+   top: 44px;
   }
   
   .testimonials-slider,
