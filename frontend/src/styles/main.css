@@ -678,7 +678,7 @@
 @media (max-width: 1440px) {
 
   #depoimentos {
-    padding: 0 190px 0 190px;
+    padding: 0 220px 0 210px;
   }
   
   #depoimentos .col-md-4 {
@@ -690,14 +690,15 @@
    #depoimentos h2 {
     font-size: 1rem;
     font-weight: 300;
-    line-height: 1rem;
+    line-height: 1.5rem;
     color: var(--cor-primary-red);
+    margin: 30px 0 0 0;
   }
 
   #depoimentos h3 {
     font-size: 1.5rem;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.5rem;
    }
 
   /* Testimonials */
@@ -705,7 +706,7 @@
   .testimonials-content {
    position: relative;
    margin-left: -140px;
-   top: 74px;
+   top: 44px;
   }
   
   .testimonials-slider,
@@ -783,7 +784,8 @@
     }
   
     #depoimentos h3 {
-      font-size: 1.2rem;
+      font-size: 2rem;
+      line-height: 1;
      }
   
     /* Testimonials */
@@ -791,7 +793,7 @@
     .testimonials-content {
      position: relative;
      margin-left: -140px;
-     top: 74px;
+     top: 30px;
     }
     
     .testimonials-slider,
@@ -877,7 +879,7 @@
 .testimonials-content {
   position: relative;
   margin-left: -110px;
-  top: 32px;
+  top: 0px;
 }
 
 .testimonials-slider,
@@ -953,10 +955,12 @@ height: 200px;
 
 #depoimentos h2 {
   font-size: .7rem !important;
+  line-height: 1rem;
 }
 
  #depoimentos h3 {
   font-size: .9rem !important;
+  line-height: 1.2;
 }
 
 /* Testimonials */
@@ -964,7 +968,7 @@ height: 200px;
 .testimonials-content {
  position: relative;
  margin-left: -100px;
- top: 25px;
+ top: 0px;
 }
 
 .testimonials-slider,
@@ -1119,6 +1123,7 @@ height: 200px;
   font-size: 1.2rem;
   font-weight: 600;
   border-bottom: 1px solid #BB010133;
+  line-height: 22px;
   
 }
 #perguntas .collapseTop{
