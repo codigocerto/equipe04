@@ -28,6 +28,7 @@ model UserInfos {
   linkedin         String
   liderar          Boolean
   experiencia      Int?    @default(0)
+  newsletter       Boolean @default(true)
   user             Users   @relation(fields: [userId], references: [id])
   userId           Int     @unique
 

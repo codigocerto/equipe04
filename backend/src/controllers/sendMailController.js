@@ -1,9 +1,10 @@
+const { PrismaClient } = require("@prisma/client");
+const prisma = new PrismaClient();
 const { z } = require("zod");
-const prisma = require("../configs/prisma");
+const env = require("../env");
 const mailProvider = require("../mailProvider/mailProvider");
 
 const sendMailController = async (request, response) => {
-
   try {
     const userSchema = z.object({
       nome: z.string().min(3),
@@ -30,7 +31,7 @@ const sendMailController = async (request, response) => {
     const { id } = await prisma.users.create({
       data: { nome: user.nome, email: user.email },
     });
-    
+
     await prisma.userInfos.create({
       data: {
         userId: id,
