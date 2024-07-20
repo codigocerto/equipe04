@@ -187,6 +187,16 @@ a {
   flex-direction: column;
 }
 
+.creator-section__info > h2 {
+  font-size: 36px;
+}
+
+.creator-section__info > h3 {
+  font-size: 18px;
+  font-size: 100;
+  margin: 0px 0 20px 0;
+}
+
 .creator-section__info p {
   font-size: 14px;
   line-height: 1.4em;
@@ -197,6 +207,12 @@ a {
   color: var(--cor-primary-black);
 }
 
+.creator-section__info a {
+  font-size: 18px;
+  font-weight: 100;
+  color: var(--cor-primary-red);
+}
+
 .creator-section__info i {
   font-size: 24px;
   color: var(--cor-primary-red);
@@ -204,7 +220,7 @@ a {
 
 .team-section {
   background-color: var(--cor-primary-red);
-  background-image: url('../../assets/images/equipe/equipe-bg.webp');
+  background-image: url('../assets/images/equipe/equipe-bg.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
