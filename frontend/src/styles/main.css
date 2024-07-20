@@ -1104,17 +1104,16 @@ height: 200px;
 
   }
 
+
   /* Perguntas Frequentes */
 
 #perguntas h2 {
-  font-size: 1rem;
-  line-height: 1rem;
-  font-weight: 300;
+  font-size: 24px;
+  font-weight: 100;
 }
 
 #perguntas h3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 32px;
   font-weight: 700;
 }
 
