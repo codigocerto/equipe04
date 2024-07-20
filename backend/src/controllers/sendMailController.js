@@ -1,36 +1,8 @@
-const { PrismaClient } = require("@prisma/client");
-const prisma = new PrismaClient();
 const { z } = require("zod");
-const env = require("../env");
+const prisma = require("../configs/prisma");
 const mailProvider = require("../mailProvider/mailProvider");
 
 const sendMailController = async (request, response) => {
-  const userSchema = z.object({
-    nome: z.string().min(3),
-    email: z.string().email(),
-    pais: z.string(),
-    funcaoPretendida: z.string(),
-    disponibilidade: z.string(),
-    senioridade: z.string(),
-    linkedin: z.string(),
-    liderar: z.boolean(),
-    experiencia: z.number().optional(),
-    newsletter: z.boolean(),
-  });
-
-    const user = userSchema.parse(request.body);
-    const userValidation = await prisma.users.findUnique({
-      where: { email: user.email }
-    });
-
-  if (userValidation) {
-    return response.status(400).json({ error: "Email já cadastrado" });
-  }
-
-  if (userValidation) {
-    return response.status(400).json({ error: "Email já cadastrado" });
-  }
-
   try {
     const userSchema = z.object({
       nome: z.string().min(3),
@@ -41,13 +13,13 @@ const sendMailController = async (request, response) => {
       senioridade: z.string(),
       linkedin: z.string(),
       liderar: z.boolean(),
-      experiencia: z.number().optional()
+      experiencia: z.number().optional(),
     });
 
     const user = userSchema.parse(request.body);
 
     const userValidation = await prisma.users.findUnique({
-      where: { email: user.email }
+      where: { email: user.email },
     });
 
     if (userValidation) {
@@ -67,7 +39,7 @@ const sendMailController = async (request, response) => {
         senioridade: user.senioridade,
         linkedin: user.linkedin,
         liderar: user.liderar,
-        experiencia: user.experiencia
+        experiencia: user.experiencia,
       },
     });
 

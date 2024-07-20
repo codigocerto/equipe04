@@ -6,11 +6,11 @@
 
 ## Funcionalidades Pendentes
 
-- [ ] Re-envio do e-mail
+- [x] Re-envio do e-mail
 
-  - [ ] Nova rota para re-enviar
-  - [ ] A rota deve receber o e-mail como query params
-  - [ ] A rota deve enviar o e-mail novamente para o e-mail passado
+  - [x] Nova rota para re-enviar
+  - [x] A rota deve receber o e-mail como query params
+  - [x] A rota deve enviar o e-mail novamente para o e-mail passado
 
 - [x] Cancelar envio dos emails
 
@@ -19,10 +19,10 @@
   - [x] A rota deve receber o e-mail como query params
   - [x] A rota deve alterar o status de receber os e-mails para não receber
 
-- [ ] Remover o registro no banco de dados
-  - [ ] Nova rota para remover o registro do banco de dados
-  - [ ] A rota deve receber o e-mail como query params
-  - [ ] A rota deve remover todos os dados do usuário do banco de dados
+- [x] Remover o registro no banco de dados
+  - [x] Nova rota para remover o registro do banco de dados
+  - [x] A rota deve receber o e-mail como query params
+  - [x] A rota deve remover todos os dados do usuário do banco de dados
 
 ## Como rodar
 
