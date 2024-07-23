@@ -2,3 +2,4 @@ backend/node_modules
 backend/.env
 backend/prisma/dev.db
 .DS_Store
+node_modules
