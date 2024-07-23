@@ -23,7 +23,7 @@ Estamos focados em criar uma página envolvente e informativa que não apenas de
 
 
 ## Tecnologias:
-[![Techs](https://skillicons.dev/icons?i=figma,html,css,js,bootstrap,nodejs,ts,prisma,sqlite)](https://skillicons.dev)
+[![Techs](https://skillicons.dev/icons?i=figma,html,css,js,bootstrap,nodejs,ts,prisma,sqlite,cypress)](https://skillicons.dev)
 
 ## Sobre a equipe:
 Nossa equipe está bastante engajada e comprometida em entregar projetos de extrema qualidade, que possam agregar valor a todos os membros da comunidade.
@@ -95,7 +95,7 @@ We are focused on creating an engaging and informative page that not only highli
 
 
 ## Techs:
-[![Techs](https://skillicons.dev/icons?i=figma,html,css,js,bootstrap,nodejs,ts,prisma,sqlite)](https://skillicons.dev)
+[![Techs](https://skillicons.dev/icons?i=figma,html,css,js,bootstrap,nodejs,ts,prisma,sqlite,cypress)](https://skillicons.dev)
 
 ## About:
 Our team is highly engaged and committed to delivering projects of exceptional quality that add value to all community members.
