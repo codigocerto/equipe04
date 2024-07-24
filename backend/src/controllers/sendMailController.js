@@ -1,6 +1,7 @@
 const { z } = require("zod");
 const prisma = require("../configs/prisma");
 const mailProvider = require("../mailProvider/mailProvider");
+const sendAdminNotification = require("./sendAdminNotification");
 
 const sendMailController = async (request, response) => {
   try {
@@ -43,7 +44,13 @@ const sendMailController = async (request, response) => {
       },
     });
 
-    await mailProvider(user.email, "teste", `<h1>teste</h1>`);
+    await mailProvider(
+      user.email,
+      "Confirmação de Cadastro",
+      `<h1>Seu cadastro foi realizado com sucesso!</h1>`
+    );
+
+    await sendAdminNotification(user);
 
     return response.status(201).send();
   } catch (error) {
