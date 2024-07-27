@@ -75,7 +75,7 @@ function renderAccordion () {
         <p>
           ${item.anwser}
         </p>
-        <a href="#">Adorei, quero fazer parte.</a>
+        <a href="#join-us">Adorei, quero fazer parte.</a>
       </div>
     `
     accordion.appendChild(accordionItem)    

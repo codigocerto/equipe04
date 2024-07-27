@@ -368,6 +368,7 @@
   color: var(--cor-primary-white);
   border: 1px solid var(--cor-primary-red);
   border-radius: 10px;
+  text-decoration: none;
 }
 
 .card__btn:hover {
