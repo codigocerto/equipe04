@@ -50,7 +50,7 @@ Nossa equipe está bastante engajada e comprometida em entregar projetos de extr
 |:-------------------------:|:-------------------------:|:-------------------------:|
 | ![Produto](./github/images/4.jpg)  | ![Produto](./github/images/5.jpg)  | ![Produto](./github/images/6.jpg)  |
 | Desenvolvedor Back-End | Desenvolvedor Front-End | Desenvolvedor Back-End |
- [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/emersonbbezerra/) [![Techs](./github/icons/github.png)](https://github.com/emersonbbezerra) | [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/iarleisouza) [![Techs](./github/icons/github.png)](https://github.com/iarleisouza) | [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/jullia-fernandes-felizardo/) [![Techs](./github/icons/github.png)](https://github.com/JulliaFernandes) |
+ [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/emersonbbezerra/) [![Techs](./github/icons/github.png)](https://github.com/emersonbbezerra) | [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/iarleisouza) [![Techs](./github/icons/github.png)](https://github.com/iarleisouza) | [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/john-sant-anna-89bab890/) [![Techs](./github/icons/github.png)](https://github.com/johnsantanna) |
 
 |      Jullia Fernandes         |      Lucas Souza        |      Luís Gustavo         |   
 |:-------------------------:|:-------------------------:|:-------------------------:|
@@ -95,7 +95,7 @@ We are focused on creating an engaging and informative page that not only highli
 
 
 ## Techs:
-[![Techs](https://skillicons.dev/icons?i=figma,html,css,js,bootstrap,nodejs,ts,prisma,sqlite,cypress)](https://skillicons.dev)
+[![Techs](https://skillicons.dev/icons?i=figma,html,css,js,bootstrap,nodejs,ts,prisma,sqlite,cypress&theme=light)](https://skillicons.dev)
 
 ## About:
 Our team is highly engaged and committed to delivering projects of exceptional quality that add value to all community members.
@@ -122,7 +122,7 @@ Our team is highly engaged and committed to delivering projects of exceptional q
 |:-------------------------:|:-------------------------:|:-------------------------:|
 | ![Produto](./github/images/4.jpg)  | ![Produto](./github/images/5.jpg)  | ![Produto](./github/images/6.jpg)  |
 | Back-End Developer| Front-End Developer | Back-End Developer |
- [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/emersonbbezerra/) [![Techs](./github/icons/github.png)](https://github.com/emersonbbezerra) | [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/iarleisouza) [![Techs](./github/icons/github.png)](https://github.com/iarleisouza) | [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/jullia-fernandes-felizardo/) [![Techs](./github/icons/github.png)](https://github.com/JulliaFernandes) |
+ [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/emersonbbezerra/) [![Techs](./github/icons/github.png)](https://github.com/emersonbbezerra) | [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/iarleisouza) [![Techs](./github/icons/github.png)](https://github.com/iarleisouza) | [![Techs](./github/icons/linkedin.png)](https://www.linkedin.com/in/john-sant-anna-89bab890/) [![Techs](./github/icons/github.png)](https://github.com/johnsantanna) |
 
 |      Jullia Fernandes         |      Lucas Souza        |      Luís Gustavo         |   
 |:-------------------------:|:-------------------------:|:-------------------------:|
