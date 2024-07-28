@@ -1,6 +1,6 @@
 describe('Carousel de Depoimentos', () => {
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:5500/frontend/index.html')
+    cy.visit('http://127.0.0.1:5500/frontend')
   })
 
   it('Verifica se o carousel está sendo renderizado', () => {

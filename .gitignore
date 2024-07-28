@@ -3,3 +3,4 @@ backend/.env
 backend/prisma/dev.db
 .DS_Store
 node_modules
+cypress/screenshots
