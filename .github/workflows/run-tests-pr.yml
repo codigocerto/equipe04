@@ -1,0 +1,45 @@
+name: End-to-end tests with PR
+
+on:
+  pull_request:
+    branches:
+      - '**'
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install Live Server
+        run: npm install -g live-server
+
+      - name: Start Live Server
+        run: live-server --port=5500 --no-browser &
+        
+      - name: Install Cypress dependencies
+        run: npm install cypress
+
+      - name: Run Cypress tests
+        run: npx cypress run --spec "cypress/e2e/frontend/**/*"
+
+      - name: Upload Cypress videos
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-videos
+          path: cypress/frontend/cypress/videos/**
+
+      - name: Upload Cypress screenshots
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: cypress-screenshots
+          path: cypress/frontend/cypress/screenshots/**
