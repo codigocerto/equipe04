@@ -1,7 +1,7 @@
-
 // Condição para desbloquear o botão de confirmação do termo de responsabilidade.
 const termos = document.getElementById('terms')
 const btnTermos = document.getElementById('btnTerms')
+AOS.init()
 
 function aceitarTermo() {
   if(btnTermos.hasAttribute('disabled')) {

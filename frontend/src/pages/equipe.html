@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
     <title>Código Certo - Equipe</title>
-    <!-- Bootstrap css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-    <!--BS ICONS-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300..900&display=swap" rel="stylesheet"/>
-    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/pages.css"" />
   </head>
@@ -56,9 +52,9 @@
       <div class="container pb-5">
         <section class="creator-section">
           <div class="creator-section__image">
-            <img src="../assets/images/equipe/image-vinicius.webp" alt="">
+            <img src="../assets/images/equipe/image-vinicius.webp" alt="" data-aos="fade-right" data-aos-duration="2000">
           </div>
-          <div class="creator-section__info">
+          <div class="creator-section__info" data-aos="fade-left" data-aos-duration="2000">
             <h2 class="text-danger mt-2">
               Vinicius Lima
             </h2>
@@ -92,8 +88,7 @@
               <strong>Criadores</strong> deste Site
             </h4>
           </div>
-          <div class="team-section__card-container mt-4" id="teamCardContainer">
-          </div>
+          <div class="team-section__card-container mt-4" id="teamCardContainer" data-aos="zoom-in" data-aos-duration="2000"></div>
         </div>
       </section>
 
@@ -132,15 +127,9 @@
               <p>O site usa cookies com o objetivo de armazenar informações, como por exemplo, as preferências do publico que acessa um determinado site, esses cookies podem ser coletados por meio de um mero popup ou até mesmo uma integração com demais serviços.</p>
               <p>Você como usuário do website www.codigocertocoders.com.br possui a total autonomia de desativar os cookies, basta acessar a configuração do seu navegador de preferência e realizar a modificação, ou caso tenha, poderá utilizar um antivirus que faça essa configuração diretamente. Vale ressaltar que, essa modificação poderá influenciar em como você navega em nosso site e em outros sites. Este fato ocorre, porque determinas programações necessitam da utilização de cookies para funcionarem corretamente, tais como os sites que necessitem de login em determinada área restrita.</p><h6>ATUALIZAÇÃO</h6>
               <p>Essa <strong>politica de privacidade</strong> obteve sua última atualização na data de 16/07/2024, podendo ser modificada a qualquer momento, sem aviso prévio.</p>
-              
-            <div>
-             <!-- <input type="checkbox" id="terms" onchange="aceitarTermo()">
-              <label for="terms">Li e concordo com os termos e regras.</label>-->
-            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Voltar</button>
-           <!-- <button type="button" class="btn btn-danger" id="btnTerms" disabled onclick="enviarTermoVoluntario()">Continuar</button>-->
           </div>
         </div>
       </div>
@@ -243,13 +232,9 @@
       </div>
     </footer>
 
-    <!-- script -->
-    <script src="../scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../scripts/renderTeamCards.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../scripts/script.js"></script>
   </body>
 </html>
