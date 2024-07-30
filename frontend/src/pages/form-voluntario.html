@@ -91,10 +91,11 @@
                 <div class="col-md-4">
                   <label for="country" class="form-label">País:</label>
                   <select id="country" class="form-select signup__container__form-input" required>
+                    <option value="" class="text-primary" disabled selected>Selecione o País</option>
                       <option>Alemanha</option>
                       <option>Austrália</option>
                       <option>Bélgica</option>
-                      <option class="text-primary" selected>Brasil</option>
+                      <option >Brasil</option>
                       <option>Canadá</option>
                       <option>Coreia do Sul</option>
                       <option>Dinamarca</option>
@@ -118,7 +119,7 @@
                 <div class="col-md-8">
                   <label for="stack" class="form-label">Função Pretendida:</label>
                   <select class="form-select signup__container__form-input"  name="stack" id="stack" required>
-                    <option selected>Escolher função pretendida</option>
+                    <option value="" disabled selected>Escolher função pretendida</option>
                     <option value="AG">Agilista</option>
                     <option value="QA">Quality Assurance</option>
                     <option value="BE">Desenvolvedor(a) Backend</option>
@@ -132,7 +133,7 @@
                 <div class="col-md-7">
                   <label for="availablity" class="form-label">Período de Disponibilidade:</label>
                   <select class="form-select signup__container__form-input" id="availablity" required>
-                    <option selected>Escolher disponiblidade</option>
+                    <option value="" disabled selected>Escolher disponiblidade</option>
                     <option value="1">Manhã (8h-12h)</option>
                     <option value="2">Tarde (12h-18h)</option>
                     <option value="3">Noite (18h-22h)</option>
@@ -143,7 +144,7 @@
                 <div class="col-md-5">
                   <label for="seniority" class="form-label">Nível de Senioridade:</label>
                   <select class="form-select signup__container__form-input" id="seniority" required>
-                    <option selected>Escolher senioridade</option>
+                    <option value="" disabled selected>Escolher senioridade</option>
                     <option value="1">Sem Experiência</option>
                     <option value="2">Júnior</option>
                     <option value="3">Pleno</option>
@@ -153,7 +154,7 @@
               </div>
               <div class="mb-3">
                 <label for="linkedin" class="form-label">Link do Perfil do Linkedin:</label>
-                <input type="url" class="form-control signup__container__form-input" id="linkedin" placeholder="https://www.linkedin.com/company/codigocerto/">
+                <input type="url" value="" class="form-control signup__container__form-input" id="linkedin" placeholder="https://www.linkedin.com/company/codigocerto/" required>
               </div>
               <div class="mb-3">
                 <span class="fs-6">Gostaria de Liderar Projetos?</span><br>
