@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik:wght@300..900&display=swap" rel="stylesheet"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="../styles/main.css" />
     <link rel="stylesheet" href="../styles/pages.css"" />
@@ -56,9 +57,9 @@
       <div class="container pb-5">
         <section class="creator-section">
           <div class="creator-section__image">
-            <img src="../assets/images/equipe/image-vinicius.webp" alt="">
+            <img src="../assets/images/equipe/image-vinicius.webp" alt="" data-aos="fade-right" data-aos-duration="2000">
           </div>
-          <div class="creator-section__info">
+          <div class="creator-section__info" data-aos="fade-left" data-aos-duration="2000">
             <h2 class="text-danger mt-2">
               Vinicius Lima
             </h2>
@@ -92,8 +93,7 @@
               <strong>Criadores</strong> deste Site
             </h4>
           </div>
-          <div class="team-section__card-container mt-4" id="teamCardContainer">
-          </div>
+          <div class="team-section__card-container mt-4" id="teamCardContainer" data-aos="zoom-in" data-aos-duration="2000"></div>
         </div>
       </section>
 
@@ -132,15 +132,9 @@
               <p>O site usa cookies com o objetivo de armazenar informações, como por exemplo, as preferências do publico que acessa um determinado site, esses cookies podem ser coletados por meio de um mero popup ou até mesmo uma integração com demais serviços.</p>
               <p>Você como usuário do website www.codigocertocoders.com.br possui a total autonomia de desativar os cookies, basta acessar a configuração do seu navegador de preferência e realizar a modificação, ou caso tenha, poderá utilizar um antivirus que faça essa configuração diretamente. Vale ressaltar que, essa modificação poderá influenciar em como você navega em nosso site e em outros sites. Este fato ocorre, porque determinas programações necessitam da utilização de cookies para funcionarem corretamente, tais como os sites que necessitem de login em determinada área restrita.</p><h6>ATUALIZAÇÃO</h6>
               <p>Essa <strong>politica de privacidade</strong> obteve sua última atualização na data de 16/07/2024, podendo ser modificada a qualquer momento, sem aviso prévio.</p>
-              
-            <div>
-             <!-- <input type="checkbox" id="terms" onchange="aceitarTermo()">
-              <label for="terms">Li e concordo com os termos e regras.</label>-->
-            </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Voltar</button>
-           <!-- <button type="button" class="btn btn-danger" id="btnTerms" disabled onclick="enviarTermoVoluntario()">Continuar</button>-->
           </div>
         </div>
       </div>
@@ -244,6 +238,7 @@
     </footer>
 
     <!-- script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../scripts/script.js"></script>
     <script src="../scripts/renderTeamCards.js"></script>
     <script
