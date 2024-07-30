@@ -8,6 +8,7 @@ const sendMailController = async (request, response) => {
     const userSchema = z.object({
       nome: z.string().min(3),
       email: z.string().email(),
+      telefone: z.string(),
       pais: z.string(),
       funcaoPretendida: z.string(),
       disponibilidade: z.string(),
@@ -23,12 +24,20 @@ const sendMailController = async (request, response) => {
       where: { email: user.email },
     });
 
+    const userTelefoneValidation = await prisma.users.findUnique({
+      where: { telefone: user.telefone },
+    });
+
     if (userValidation) {
       return response.status(400).json({ error: "Email já cadastrado" });
     }
 
+    if (userTelefoneValidation) {
+      return response.status(400).json({ error: "Telefone já cadastrado" });
+    }
+
     const { id } = await prisma.users.create({
-      data: { nome: user.nome, email: user.email },
+      data: { nome: user.nome, email: user.email, telefone: user.telefone },
     });
 
     await prisma.userInfos.create({

@@ -7,6 +7,7 @@ const sendAdminNotification = async (user) => {
     <h1>Novo cadastro de usuário</h1>
     <p>Nome: ${user.nome}</p>
     <p>Email: ${user.email}</p>
+    <p>Telefone: ${user.telefone}</p>
     <p>País: ${user.pais}</p>
     <p>Função Pretendida: ${user.funcaoPretendida}</p>
     <p>Disponibilidade: ${user.disponibilidade}</p>
