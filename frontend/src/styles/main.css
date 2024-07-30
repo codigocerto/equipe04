@@ -445,11 +445,11 @@
   flex-direction: column;
 }
 
-.card--agilista {
+.card--devops {
   width: 360px;
   height: 240px;
   padding: 24px;
-  background-image: url('../assets/images/home/card-carreiras-meto.webp');
+  background-image: url('../assets/images/home/card-carreiras-devops.webp');
   display: flex;
   align-items: start;
   justify-content: end;
@@ -460,12 +460,12 @@
 .card--back > .card__title,
 .card--qa > .card__title,
 .card--dados > .card__title,
-.card--agilista > .card__title {
+.card--devops > .card__title {
   width: 100%;
 }
 
 .card--front > .card__text,
-.card--agilista > .card__text, 
+.card--devops > .card__text, 
 .card--dados > .card__text {
   margin-left: 0px;
   width: 230px;
@@ -509,8 +509,8 @@
   background-image: url('../assets/images/home/card-carreiras-dados-tablet.webp');
 }
 
-.card--tablet--agilista {
-  background-image: url('../assets/images/home/card-carreiras-meto-tablet.webp');
+.card--tablet--devops {
+  background-image: url('../assets/images/home/card-carreiras-devops-tablet.webp');
 }
 
 .card--tablet__title {
@@ -1410,6 +1410,11 @@ height: 200px;
 
 .last-footer a:hover {
   color: var(--cor-primary-white);
+}
+
+#carrerModal {
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
 }
 
 @media (max-width: 640px) {

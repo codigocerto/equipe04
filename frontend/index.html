@@ -101,7 +101,6 @@
     </section>
 
     <!--INICIO DA SEÇÃO SOBRE-->
-
     <section class="sobre" id="sobre" data-aos="zoom-in" data-aos-duration="1000">
       <div class="container sobre__container">
         <img src="./src/assets/images/home/sobre-imagem.webp" alt="imagem da mascote da comunidade código certo com a logo de fundo" data-aos="fade-right" data-aos-duration="2000">
@@ -146,12 +145,12 @@
           <div class="carreiras__container__cardlist">
             <div class="cardlist__column--1" data-aos="flip-up" data-aos-duration="2000">
               <h4 class="card__title">
-                UI/UX Design
+                UX/UI Design
               </h4>
               <p class="card__text">
                 Otimizam a jornada do usuário para uma experiência fluida e agradável.
               </p>
-              <a href="#join-us" class="card__btn">Saber Mais</a>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('0')" class="card__btn">Saber Mais</button>
             </div>
       
             <div class="cardlist__column--2">
@@ -162,7 +161,7 @@
                 <p class="card__text">
                   Implementam o design de um site com códigos.
                 </p>
-                <a href="#join-us" class="card__btn">Saber Mais</a>
+                <button type="button" class="card__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('1')">Saber Mais</button>
               </div>
 
               <div class="card--back" data-aos="flip-up" data-aos-duration="2000">
@@ -172,7 +171,7 @@
                 <p class="card__text">
                   Mantém a estrutura de códigos entre site, servidor e banco.
                 </p>
-                <a href="#join-us" class="card__btn">Saber Mais</a>
+                <button type="button" class="card__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('2')">Saber Mais</button>
               </div>
 
               <div class="card--qa" data-aos="flip-up" data-aos-duration="2000">
@@ -182,7 +181,7 @@
                 <p class="card__text">
                   Garantem a qualidade do software através de testes.
                 </p>
-                <a href="#join-us" class="card__btn">Saber Mais</a>
+                <button type="button" class="card__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('3')">Saber Mais</button>
               </div>
               
               <div class="card--dados" data-aos="flip-up" data-aos-duration="2000">
@@ -192,17 +191,17 @@
                 <p class="card__text">
                   Analisam informações e extraem dados relevantes.
                 </p>
-                <a href="#join-us" class="card__btn">Saber Mais</a>
+                <button type="button" class="card__btn"  data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('4')">Saber Mais</button>
               </div>
               
-              <div class="card--agilista" data-aos="flip-up" data-aos-duration="2000">
+              <div class="card--devops" data-aos="flip-up" data-aos-duration="2000">
                 <h4 class="card__title">
-                  Agilista  
+                  DevOps  
                 </h4>
                 <p class="card__text">
-                  Orientam as equipes no uso de metodologias ágeis.
+                  Unem desenvolvimento e operações para otimizar as entregas.
                 </p>
-                <a href="#join-us" class="card__btn">Saber Mais</a>
+                <button type="button" class="card__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('5')">Saber Mais</button>
               </div>
 
             </div>
@@ -210,12 +209,12 @@
           <div class="carreiras__container__cardlist--tablet">
             <div class="card--tablet" data-aos="flip-up" data-aos-duration="1000">
               <h4 class="card--tablet__title">
-                UI/ UX Design
+                UX/UI Design
               </h4>
               <p class="card--tablet__content font-roboto">
                 Otimizam a jornada do usuário para uma experiência fluida e agradável.
               </p>
-              <a href="#join-us" class="card--tablet__btn">Saiba Mais</a>
+              <button type="button" class="card--tablet__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('0')">Saiba Mais</button>
             </div>
             
             <div class="card--tablet card--tablet--front">
@@ -225,7 +224,7 @@
               <p class="card--tablet__content font-roboto">
                 Implementam o design de um site com códigos.
               </p>
-              <a href="#join-us" class="card--tablet__btn">Saiba Mais</a>
+              <button type="button" class="card--tablet__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('1')">Saiba Mais</button>
             </div>
             
             <div class="card--tablet card--tablet--back">
@@ -235,7 +234,7 @@
               <p class="card--tablet__content font-roboto">
                 Mantém a estrutura de códigos entre site, servidor e banco.
               </p>
-              <a href="#join-us" class="card--tablet__btn">Saiba Mais</a>
+              <button type="button" class="card--tablet__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('2')">Saiba Mais</button>
             </div>
             
             <div class="card--tablet card--tablet--qa">
@@ -245,7 +244,7 @@
               <p class="card--tablet__content font-roboto">
                 Garantem a qualidade do software através de testes.
               </p>
-              <a href="#join-us" class="card--tablet__btn">Saiba Mais</a>
+              <button type="button" class="card--tablet__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('3')">Saiba Mais</button>
             </div>
 
             <div class="card--tablet card--tablet--dados">
@@ -255,26 +254,46 @@
               <p class="card--tablet__content font-roboto">
                 Analisam informações e extraem dados relevantes.
               </p>
-              <a href="#join-us" class="card--tablet__btn">Saiba Mais</a>
+              <button type="button" class="card--tablet__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('4')">Saiba Mais</button>
             </div>
             
-            <div class="card--tablet card--tablet--agilista">
+            <div class="card--tablet card--tablet--devops">
               <h4 class="card--tablet__title" data-aos="flip-up" data-aos-duration="1000">
-                Agilista
+                DevOps
               </h4>
               <p class="card--tablet__content font-roboto">
-                Orientam as equipes no uso de metodologias ágeis.
+                Unem desenvolvimento e operações para otimizar as entregas.
               </p>
-              <a href="#join-us" class="card--tablet__btn">Saiba Mais</a>
+              <button type="button" class="card--tablet__btn" data-bs-toggle="modal" data-bs-target="#carrerModal" onclick="handleModal('5')">Saiba Mais</button>
             </div>
 
           </div>
         </div>
       </div>
+
     </section>
+    <!--Carrer modal-->
+    <div class="modal fade" id="carrerModal" tabindex="-1" aria-labelledby="carrerModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="carrerModalLabel">Título do modal</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="modal__text fw-light font-roboto" id="carrerModalContent" style="font-size: 14px;"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Voltar</button>
+            <a href="./src/pages/termo-voluntario.html" class="btn btn-danger">Me Inscrever</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
 
     <!--INICIO DA SEÇÃO DEPOIMENTOS-->
-
     <section id="depoimentos">
       <div class="container">
         <div class="row text-light d-flex">
@@ -391,8 +410,7 @@
     </section>
     <!--FINAL DA SEÇÃO PERGUNTAS FREQUENTES-->
 
-        <!--FAÇA PARTE DA NOSSA EQUIPE-->
-
+    <!--FAÇA PARTE DA NOSSA EQUIPE-->
     <section class="join-us" id="join-us">
       <div class="container join-us__bg">
         <img src="./src/assets/images/home/icon-faca-parte.webp" alt="" class="join-us__image" data-aos="fade-right" data-aos-duration="2000">
@@ -561,6 +579,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./src/scripts/script.js"></script>
   <script src="./src/scripts/swiper.js"></script>
-  <script src="./src/scripts/renderAccordion.js"></script>  
+  <script src="./src/scripts/renderAccordion.js"></script>
+  <script src="./src/scripts/renderCarrerModal.js"></script>
 </body>
 </html>
