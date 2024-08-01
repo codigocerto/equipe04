@@ -14,7 +14,8 @@ const sendMailController = async (request, response) => {
       disponibilidade: z.string(),
       senioridade: z.string(),
       linkedin: z.string(),
-      liderar: z.boolean(),
+      liderar: z.boolean().optional(),
+      tipo: z.enum(["voluntario", "mentor"]),
       experiencia: z.number().optional(),
     });
 
@@ -48,16 +49,29 @@ const sendMailController = async (request, response) => {
         disponibilidade: user.disponibilidade,
         senioridade: user.senioridade,
         linkedin: user.linkedin,
-        liderar: user.liderar,
+        liderar: user.tipo === "voluntario" ? user.liderar || false : false,
+        mentor: user.tipo === "mentor",
         experiencia: user.experiencia,
       },
     });
 
-    await mailProvider(
-      user.email,
-      "Confirmação de Cadastro",
-      `<h1>Seu cadastro foi realizado com sucesso!</h1>`
-    );
+    let emailSubject, emailBody;
+    if (user.tipo === "mentor") {
+      emailSubject = "Confirmação de Cadastro como Mentor";
+      emailBody = `
+        <p>Aqui irá o conteúdo do email específico para o mentor.</p>
+      `;
+    } else {
+      emailSubject = "Confirmação de Cadastro como Voluntário";
+      emailBody = `
+        <p>Aqui irá o conteúdo do email específico para o voluntário.</p>
+      `;
+    }
+    //a rota de cadastro é a mesma para ambos os tipos
+    //no form do mentor tem que incluir ( <input type="hidden" name="tipo" value="mentor"> )
+    //no form do voluntário tem que incluir ( <input type="hidden" name="tipo" value="voluntario"> )
+
+    await mailProvider(user.email, emailSubject, emailBody);
 
     await sendAdminNotification(user);
 
