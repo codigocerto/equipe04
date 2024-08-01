@@ -105,10 +105,10 @@
   color: var(--cor-input-placeholder);
 }
 
-.signup__container__form-input::placeholder {
-  color: var(--cor-input-placeholder);
+.signup__container__form-input::placeholder,
+.select-placeholder {
+  color: #a6a6a6;
 }
-
 
 .signup__container__form-radio input {
   display: none;
@@ -318,6 +318,10 @@ a {
     justify-content: start;
     text-align: center;
     max-width: 100%;
+  }
+
+  .mobile-input {
+    margin-bottom: 16px;
   }
 }
 
