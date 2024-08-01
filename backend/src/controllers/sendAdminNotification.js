@@ -13,6 +13,7 @@ const sendAdminNotification = async (user) => {
     <p>Disponibilidade: ${user.disponibilidade}</p>
     <p>Senioridade: ${user.senioridade}</p>
     <p>LinkedIn: ${user.linkedin}</p>
+    <p>Tipo de Usuário: ${user.tipo === "mentor" ? "Mentor" : "Voluntário"}</p>
     <p>Liderança: ${user.liderar ? "Sim" : "Não"}</p>
     <p>Experiência: ${user.experiencia || "Nenhuma informada"}</p>
   `;
