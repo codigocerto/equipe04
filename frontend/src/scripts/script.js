@@ -19,6 +19,12 @@ function enviarTermoMentor() {
   window.location.href = '../pages/form-mentoria.html';
 }
 
+function mudarCorSelect(id) {
+  const select = document.getElementById(id)
+
+  select.classList.remove('select-placeholder')
+}
+
 //  validação bootstrap
 (() => {
   'use strict'

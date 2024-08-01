@@ -66,7 +66,7 @@
                 <input type="text" class="form-control signup__container__form-input" id="fullName" placeholder="José da Silva" required>
               </div>
               <div class="row mb-3">
-                <div class="col-md-8">
+                <div class="col-md-8 mobile-input">
                   <label for="email" class="form-label">Email para Contato:</label>
                   <input type="email" class="form-control signup__container__form-input" id="email" placeholder="josesilva@gmail.com" required>
                 </div>
@@ -76,9 +76,9 @@
                 </div>
               </div>
               <div class="row mb-3">
-                <div class="col-md-4">
+                <div class="col-md-4 mobile-input">
                   <label for="country" class="form-label">País:</label>
-                  <select id="country" class="form-select signup__container__form-input" required>
+                  <select id="country" class="form-select select-placeholder signup__container__form-input" required onclick='mudarCorSelect("country")'>
                     <option class="text-primary" value="" disabled selected>Selecione o País</option>
                       <option>Alemanha</option>
                       <option>Austrália</option>
@@ -106,30 +106,23 @@
                 </div>
                 <div class="col-md-8">
                   <label for="stack" class="form-label">Função Pretendida:</label>
-                  <select class="form-select signup__container__form-input"  name="stack" id="stack" required>
+                  <select class="form-select signup__container__form-input select-placeholder"  name="stack" id="stack" required onclick='mudarCorSelect("stack")'>
                     <option value="" disabled selected>Escolher função pretendida</option>
-                    <option value="AG">Agilista</option>
-                    <option value="QA">Quality Assurance</option>
+                    <option value="DA">Dados</option>
                     <option value="BE">Desenvolvedor(a) Backend</option>
                     <option value="FE">Desenvolvedor(a) Frontend</option>
                     <option value="FS">Desenvolvedor(a) Fullstack</option>
+                    <option value="MO">Desenvolvedor(a) Mobile</option>
+                    <option value="DO">DevOps</option>
+                    <option value="QA">Quality Assurance</option>
                     <option value="UXUI">UX/UI Designer</option>
                   </select>
                 </div>
               </div>
-              <div class="mb-3">
-                <label for="experience" class="form-label">Período de Experiência:</label>
-                <select class="form-select signup__container__form-input" id="experience" required>
-                  <option value="" disabled selected>Menos de 1 ano</option>
-                  <option value="1">Entre 1 e 2 anos</option>
-                  <option value="2">Entre 2 e 5 anos</option>
-                  <option value="3">Mais de 5 anos</option>
-                </select>
-              </div>
               <div class="row mb-3">
-                <div class="col-md-7">
+                <div class="col-md-7 mobile-input">
                   <label for="availablity" class="form-label">Período de Disponibilidade:</label>
-                  <select class="form-select signup__container__form-input" id="availablity" required>
+                  <select class="form-select signup__container__form-input select-placeholder" id="availablity" required onclick='mudarCorSelect("availablity")'>
                     <option value="" disabled selected>Escolher disponiblidade</option>
                     <option value="1">Manhã (8h-12h)</option>
                     <option value="2">Tarde (12h-18h)</option>
@@ -139,13 +132,13 @@
                   </select>
                 </div>
                 <div class="col-md-5">
-                  <label for="seniority" class="form-label">Nível de Senioridade:</label>
-                  <select class="form-select signup__container__form-input" id="seniority" required>
-                    <option value="" disabled selected>Escolher senioridade</option>
-                    <option value="1">Sem Experiência</option>
-                    <option value="2">Júnior</option>
-                    <option value="3">Pleno</option>
-                    <option value="4">Sênior</option>
+                  <label for="experience" class="form-label">Período de Experiência:</label>
+                  <select class="form-select signup__container__form-input select-placeholder" id="experience" required onclick='mudarCorSelect("experience")'>
+                    <option value="" disabled >Escolher período de experiência</option>
+                    <option value="1">Menos de 1 ano</option>
+                    <option value="2">Entre 1 e 2 anos</option>
+                    <option value="3">Entre 2 e 5 anos</option>
+                    <option value="4">Mais de 5 anos</option>
                   </select>
                 </div>
               </div>
