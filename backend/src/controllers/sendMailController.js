@@ -12,11 +12,10 @@ const sendMailController = async (request, response) => {
       pais: z.string(),
       funcaoPretendida: z.string(),
       disponibilidade: z.string(),
-      senioridade: z.string(),
       linkedin: z.string(),
       liderar: z.boolean().optional(),
       tipo: z.enum(["voluntario", "mentor"]),
-      experiencia: z.number().optional(),
+      experiencia: z.string().optional(),
     });
 
     const user = userSchema.parse(request.body);
@@ -47,11 +46,10 @@ const sendMailController = async (request, response) => {
         pais: user.pais,
         funcaoPretendida: user.funcaoPretendida,
         disponibilidade: user.disponibilidade,
-        senioridade: user.senioridade,
         linkedin: user.linkedin,
         liderar: user.tipo === "voluntario" ? user.liderar || false : false,
         mentor: user.tipo === "mentor",
-        experiencia: user.experiencia,
+        experiencia: user.experiencia || "Nenhuma informada",
       },
     });
 
@@ -59,11 +57,13 @@ const sendMailController = async (request, response) => {
     if (user.tipo === "mentor") {
       emailSubject = "Confirmação de Cadastro como Mentor";
       emailBody = `
+        <h1>Olá, ${user.nome}</h1>
         <p>Aqui irá o conteúdo do email específico para o mentor.</p>
       `;
     } else {
       emailSubject = "Confirmação de Cadastro como Voluntário";
       emailBody = `
+        <h1>Olá, ${user.nome}</h1>
         <p>Aqui irá o conteúdo do email específico para o voluntário.</p>
       `;
     }
