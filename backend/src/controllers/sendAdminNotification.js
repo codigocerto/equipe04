@@ -11,7 +11,6 @@ const sendAdminNotification = async (user) => {
     <p>País: ${user.pais}</p>
     <p>Função Pretendida: ${user.funcaoPretendida}</p>
     <p>Disponibilidade: ${user.disponibilidade}</p>
-    <p>Senioridade: ${user.senioridade}</p>
     <p>LinkedIn: ${user.linkedin}</p>
     <p>Tipo de Usuário: ${user.tipo === "mentor" ? "Mentor" : "Voluntário"}</p>
     <p>Liderança: ${user.liderar ? "Sim" : "Não"}</p>
