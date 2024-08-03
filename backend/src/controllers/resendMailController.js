@@ -1,4 +1,6 @@
 const prisma = require("../configs/prisma");
+const emailTemplateMentor = require("../emailTemplates/emailTemplateMentor");
+const emailTemplateVoluntario = require("../emailTemplates/emailTemplateVoluntario");
 const mailProvider = require("../mailProvider/mailProvider");
 
 const resendMailController = async (request, response) => {
@@ -17,7 +19,16 @@ const resendMailController = async (request, response) => {
       return response.status(404).json({ error: "Email não encontrado" });
     }
 
-    mailProvider(user.email, "Reenvio de Email", `<h1>Reenvio de Email</h1>`);
+    let emailSubject, emailBody;
+    if (user.tipo === "mentor") {
+      emailSubject = "Confirmação de Cadastro como Mentor";
+      emailBody = emailTemplateMentor(user);
+    } else {
+      emailSubject = "Confirmação de Cadastro como Voluntário";
+      emailBody = emailTemplateVoluntario(user);
+    }
+
+    await mailProvider(user.email, emailSubject, emailBody);
 
     response.status(200).json({ message: "Email reenviado com sucesso" });
   } catch (error) {

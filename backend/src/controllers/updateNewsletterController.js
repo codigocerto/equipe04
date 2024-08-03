@@ -1,7 +1,7 @@
 const prisma = require("../configs/prisma");
 
 const updateNewsletterController = async (request, response) => {
-  const { email } = request.query;
+  const email = request.query.email || request.body.email;
 
   if (!email) {
     return response.status(400).json({ error: "Email é obrigatório" });
