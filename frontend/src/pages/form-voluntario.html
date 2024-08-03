@@ -60,7 +60,7 @@
                 Informações Pessoais
               </h4>
             </div>
-            <form class="mt-3 needs-validation" novalidate>
+            <form class="mt-3 needs-validation" id="form-voluntario" novalidate>
               <div class="mb-3">
                 <label for="fullName" class="form-label">Nome Completo:</label>
                 <input type="text" class="form-control signup__container__form-input" id="fullName" placeholder="José da Silva" required>
@@ -80,65 +80,65 @@
                   <label for="country" class="form-label">País:</label>
                   <select id="country" class="form-select select-placeholder signup__container__form-input" required onclick='mudarCorSelect("country")'> 
                     <option value="" class="text-primary" disabled selected>Selecione o País</option>
-                      <option>Alemanha</option>
-                      <option>Austrália</option>
-                      <option>Bélgica</option>
-                      <option >Brasil</option>
-                      <option>Canadá</option>
-                      <option>Coreia do Sul</option>
-                      <option>Dinamarca</option>
-                      <option>Espanha</option>
-                      <option>França</option>
-                      <option>Finlândia</option>
-                      <option>Hungria</option>
-                      <option>Inglaterra</option>
-                      <option>Irlanda</option>
-                      <option>Itália</option>
-                      <option>Japão</option>
-                      <option>Noruega</option>
-                      <option>Países Baixos</option>
-                      <option>Polónia</option>
-                      <option>Portugal</option>
-                      <option>Singapura</option>
-                      <option>Suécia</option>
-                      <option>Nova Zelândia</option>
+                      <option value="Alemanha">Alemanha</option>
+                      <option value="Austrália">Austrália</option>
+                      <option value="Bélgica">Bélgica</option>
+                      <option value="Brasil">Brasil</option>
+                      <option value="Canadá">Canadá</option>
+                      <option value="Coreia do Sul">Coreia do Sul</option>
+                      <option value="Dinamarca">Dinamarca</option>
+                      <option value="Espanha">Espanha</option>
+                      <option value="França">França</option>
+                      <option value="Finlândia">Finlândia</option>
+                      <option value="Hungria">Hungria</option>
+                      <option value="Inglaterra">Inglaterra</option>
+                      <option value="Irlanda">Irlanda</option>
+                      <option value="Itália">Itália</option>
+                      <option value="Japão">Japão</option>
+                      <option value="Noruega">Noruega</option>
+                      <option value="Países Baixos">Países Baixos</option>
+                      <option value="Polónia">Polónia</option>
+                      <option value="Portugal">Portugal</option>
+                      <option value="Singapura">Singapura</option>
+                      <option value="Suécia">Suécia</option>
+                      <option value="Nova Zelândia">Nova Zelândia</option>
                   </select>
                 </div>
                 <div class="col-md-8">
                   <label for="stack" class="form-label">Função Pretendida:</label>
                   <select class="form-select select-placeholder signup__container__form-input"  name="stack" id="stack" required onclick='mudarCorSelect("stack")'>
                     <option value="" disabled selected>Escolher função pretendida</option>
-                    <option value="DA">Dados</option>
-                    <option value="BE">Desenvolvedor(a) Backend</option>
-                    <option value="FE">Desenvolvedor(a) Frontend</option>
-                    <option value="FS">Desenvolvedor(a) Fullstack</option>
-                    <option value="MO">Desenvolvedor(a) Mobile</option>
-                    <option value="DO">DevOps</option>
-                    <option value="QA">Quality Assurance</option>
-                    <option value="UXUI">UX/UI Designer</option>
+                    <option value="Dados">Dados</option>
+                    <option value="Desenvolvedor(a) Backend">Desenvolvedor(a) Backend</option>
+                    <option value="Desenvolvedor(a) Frontend">Desenvolvedor(a) Frontend</option>
+                    <option value="Desenvolvedor(a) Fullstack">Desenvolvedor(a) Fullstack</option>
+                    <option value="Desenvolvedor(a) Mobile">Desenvolvedor(a) Mobile</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="Quality Assurance">Quality Assurance</option>
+                    <option value="UX/UI Designer">UX/UI Designer</option>
                   </select>
                 </div>
               </div>
               <div class="row mb-3">
                 <div class="col-md-7 mobile-input">
-                  <label for="availablity" class="form-label">Período de Disponibilidade:</label>
-                  <select class="form-select signup__container__form-input select-placeholder" id="availablity" required onclick='mudarCorSelect("availablity")'>
+                  <label for="availability" class="form-label">Período de Disponibilidade:</label>
+                  <select class="form-select signup__container__form-input select-placeholder" id="availability" required onclick='mudarCorSelect("availability")'>
                     <option value="" disabled selected>Escolher disponiblidade</option>
-                    <option value="1">Manhã (8h-12h)</option>
-                    <option value="2">Tarde (12h-18h)</option>
-                    <option value="3">Noite (18h-22h)</option>
-                    <option value="4">Final de Semana(apenas)</option>
-                    <option value="5">Total Disponibilidade</option>
+                    <option value="Manhã (8h-12h)">Manhã (8h-12h)</option>
+                    <option value="Tarde (12h-18h)">Tarde (12h-18h)</option>
+                    <option value="Noite (18h-22h)">Noite (18h-22h)</option>
+                    <option value="Final de Semana(apenas)">Final de Semana(apenas)</option>
+                    <option value="Total Disponibilidade">Total Disponibilidade</option>
                   </select>
                 </div>
                 <div class="col-md-5">
                   <label for="experience" class="form-label">Período de Experiência:</label>
                   <select class="form-select signup__container__form-input select-placeholder" id="experience" required onclick='mudarCorSelect("experience")'>
                     <option value="" disabled class="text-danger">Escolher período de experiência</option>
-                    <option value="1">Menos de 1 ano</option>
-                    <option value="2">Entre 1 e 2 anos</option>
-                    <option value="3">Entre 2 e 5 anos</option>
-                    <option value="4">Mais de 5 anos</option>
+                    <option value="Menos de 1 ano">Menos de 1 ano</option>
+                    <option value="Entre 1 e 2 anos">Entre 1 e 2 anos</option>
+                    <option value="Entre 2 e 5 anos">Entre 2 e 5 anos</option>
+                    <option value="Mais de 5 anos">Mais de 5 anos</option>
                   </select>
                 </div>
               </div>
@@ -149,13 +149,13 @@
               <div class="mb-3">
                 <span class="fs-6">Gostaria de Liderar Projetos?</span><br>
                 <div class="signup__container__form-radio mt-2">
-                  <input class="form-check-input" id="yes" name="leader" value="1" type="radio" required>
+                  <input class="form-check-input" id="yes" name="leader" value='true' type="radio" required>
                   <label class="form-check-label" for="yes">
                     Sim! Tenho interesse em liderar projetos e assumir responsabilidades.
                   </label>
                 </div>
                 <div class="signup__container__form-radio">
-                  <input class="form-check-input" id="no" name="leader" value="0" type="radio" required>
+                  <input class="form-check-input" id="no" name="leader" value='false' type="radio" required>
                   <label class="form-check-label" for="no">
                     Não! No momento prefiro focar em desenvolvimento e contribuir como membro.
                   </label>
