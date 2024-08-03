@@ -3,7 +3,7 @@ const prisma = require("../configs/prisma");
 const mailProvider = require("../mailProvider/mailProvider");
 const sendAdminNotification = require("./sendAdminNotification");
 const emailTemplateMentor = require("../emailTemplates/emailTemplateMentor");
-const emailTemplateVoluntario = require("../emailTemplates/EmailTemplateVoluntario");
+const emailTemplateVoluntario = require("../emailTemplates/emailTemplateVoluntario");
 
 const sendMailController = async (request, response) => {
   try {
