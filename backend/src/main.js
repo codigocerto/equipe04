@@ -8,12 +8,12 @@ const resendMailController = require("./controllers/resendMailController");
 const updateNewsletterController = require("./controllers/updateNewsletterController");
 const deleteUserController = require("./controllers/deleteUserController");
 const corsOptions = {
-  origin: 'https://equipe04.vercel.app/',
-  optionsSuccessStatus: 200
-}
+  origin: "https://equipe04.vercel.app/",
+  optionsSuccessStatus: 200,
+};
 
-api.use(cors(corsOptions))
 api.use(express.json());
+api.use(cors(corsOptions));
 
 api.post("/cadastro", sendMailController);
 api.post("/resend-mail", resendMailController);
