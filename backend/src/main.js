@@ -1,6 +1,6 @@
 const express = require("express");
 const api = express();
-const cors = cors();
+const cors = require("cors");
 const env = require("./env");
 
 const sendMailController = require("./controllers/sendMailController");
