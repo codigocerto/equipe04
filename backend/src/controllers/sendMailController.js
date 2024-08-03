@@ -39,7 +39,7 @@ const sendMailController = async (request, response) => {
     }
 
     const { id } = await prisma.users.create({
-      data: { nome: user.nome, email: user.email, telefone: user.telefone },
+      data: { nome: user.nome, email: user.email.toLowerCase(), telefone: user.telefone },
     });
 
     await prisma.userInfos.create({
@@ -63,11 +63,8 @@ const sendMailController = async (request, response) => {
       emailSubject = "Confirmação de Cadastro como Voluntário";
       emailBody = emailTemplateVoluntario(user);
     }
-    //a rota de cadastro é a mesma para ambos os tipos
-    //no form do mentor tem que incluir ( <input type="hidden" name="tipo" value="mentor"> )
-    //no form do voluntário tem que incluir ( <input type="hidden" name="tipo" value="voluntario"> )
 
-    await mailProvider(user.email, emailSubject, emailBody);
+    await mailProvider(user.email.toLowerCase(), emailSubject, emailBody);
 
     await sendAdminNotification(user, user.tipo);
 
