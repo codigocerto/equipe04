@@ -16,7 +16,7 @@ const sendMailController = async (request, response) => {
       disponibilidade: z.string(),
       linkedin: z.string(),
       liderar: z.boolean().optional(),
-      tipo: z.enum(["voluntario", "mentor"]),
+      tipo: z.boolean(),
       experiencia: z.string().optional(),
     });
 
@@ -49,14 +49,14 @@ const sendMailController = async (request, response) => {
         funcaoPretendida: user.funcaoPretendida,
         disponibilidade: user.disponibilidade,
         linkedin: user.linkedin,
-        liderar: user.tipo === "voluntario" ? user.liderar || false : false,
-        mentor: user.tipo === "mentor",
+        liderar: user.liderar,
+        mentor: user.tipo,
         experiencia: user.experiencia || "Nenhuma informada",
       },
     });
 
     let emailSubject, emailBody;
-    if (user.tipo === "mentor") {
+    if (user.tipo) {
       emailSubject = "Confirmação de Cadastro como Mentor";
       emailBody = emailTemplateMentor(user);
     } else {
@@ -68,7 +68,7 @@ const sendMailController = async (request, response) => {
 
     await sendAdminNotification(user, user.tipo);
 
-    return response.status(201).send();
+    return response.status(201).json({ message: "Cadastro enviado com sucesso" });
   } catch (error) {
     console.error("Erro em sendMailController:", error);
     return response.status(500).json({ error: "Erro ao processar requisição" });
