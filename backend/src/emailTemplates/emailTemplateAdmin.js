@@ -37,14 +37,14 @@ const emailTemplateAdmin = (user) => `
                 <h3 style="font-family: Roboto, sans-serif; font-size: 16px; font-weight: 400;">
                   Acabamos de receber mais um interessado em fazer parte da nossa Comunidade
                   como <strong style="font-weight: 500; color: #D53535;">${
-                    user.tipo === "mentor" ? "Mentor" : "Voluntário"
+                    user.tipo ? "Mentor" : "Voluntário"
                   }!</strong>😃
                 </h3>
               </td>
             </tr>
             <tr>
               <td colspan="2" style="padding: 0 30px 24px 30px; font-family: Roboto, sans-serif; font-size: 22px; font-weight: 400;">
-                <strong style="font-weight: 700; color: #D53535;">${
+                <strong style="font-weight: 700; color: #D53535; text-transform: capitalize;">${
                   user.nome
                 }</strong>
               </td>
@@ -58,7 +58,7 @@ const emailTemplateAdmin = (user) => `
             <tr>
               <td colspan="2" style="padding: 0 30px 16px 30px; font-family: Roboto, sans-serif; font-size: 16px; font-weight: 400;">
                 <strong style="font-weight: 700; color: #D53535; font-size: 18px;">Telefone:</strong>
-                ${user.telefone}
+                ${user.telefone}.
               </td>
             </tr>
             <tr>
