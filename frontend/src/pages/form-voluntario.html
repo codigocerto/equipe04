@@ -164,14 +164,56 @@
               <button type="submit" class="btn signup__container__form-btn">
                 Enviar Cadastro
               </button>
+              <span class="mt-2 resend-email" data-bs-toggle="modal" data-bs-target="#resendEmailModal">Não recebi meu e-mail</span>
             </form>
           </div>
         </div>
+        <div class="modal fade" id="resendEmailModal" tabindex="-1" aria-labelledby="resendEmailModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="resendEmailModal">Reenviar E-mail</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p style="font-size: 14px;">
+                  Se você se cadastrou e não recebeu o e-mail, por favor,
+                  insira seu endereço de e-mail cadastrado no campo abaixo.
+                </p>
+                <form class="needs-validation" id="form-resend-email" novalidate>
+                  <div class="resend-email__modal-content">
+                    <label for="savedEmail" class="form-label">Email cadastrado:</label>
+                    <input type="email" class="form-control signup__container__form-input" id="savedEmail" placeholder="josesilva@gmail.com" required>
+                    <button type="submit" class="btn btn-danger mt-3">Reenviar E-mail</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal retorno back -->
+        <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="messageModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="modalMessageBody"></div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
     </main>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../scripts/script.js"></script>
+    <script src="../services/sendFormVoluntario.js"></script>
+    <script src="../services/resendEmail.js"></script>
   </body>
 </html>

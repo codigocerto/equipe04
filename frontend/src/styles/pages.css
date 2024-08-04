@@ -148,6 +148,17 @@
   color: var(--cor-primary-red);
 }
 
+.resend-email {
+  display: block;
+  font-size: 12px;
+  color: var(--cor-primary-red);
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.resend-email:hover {
+  color: var(--cor-input-placeholder);
+}
 
 li {
   list-style: none;

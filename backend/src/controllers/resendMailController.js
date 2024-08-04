@@ -4,7 +4,7 @@ const emailTemplateVoluntario = require("../emailTemplates/emailTemplateVoluntar
 const mailProvider = require("../mailProvider/mailProvider");
 
 const resendMailController = async (request, response) => {
-  const { email } = request.query;
+  const { email } = request.body;
 
   if (!email) {
     return response.status(400).json({ error: "Email não informado" });

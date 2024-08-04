@@ -34,7 +34,7 @@ const emailTemplateVoluntario = (user) => `
                 </tr>
                 <tr>
                   <td colspan="2" style="padding: 0 30px; font-family: Roboto, sans-serif; font-size: 20px; font-weight: 400;">
-                    Olá, <strong style="color: #D53535;">${user.nome}!</strong> <span style="font-size: 24px;">👋</span>
+                    Olá, <strong style="color: #D53535; text-transform: capitalize;">${user.nome}!</strong> <span style="font-size: 24px;">👋</span>
                   </td>
                 </tr>
                 <tr>
