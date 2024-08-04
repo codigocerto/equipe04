@@ -9,7 +9,7 @@ formResendEmail.addEventListener('submit', async function(event) {
   }
 
   try {
-    const fetchResponse = await fetch('http://127.0.0.1:3000/resend-mail', {
+    const fetchResponse = await fetch('https://equipe04-production.up.railway.app/resend-mail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -29,17 +29,3 @@ jobs:
 
       - name: Run Cypress tests
         run: npx cypress run --spec "cypress/e2e/frontend/**/*"
-
-      - name: Upload Cypress videos
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: cypress-videos
-          path: cypress/frontend/cypress/videos/**
-
-      - name: Upload Cypress screenshots
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: cypress-screenshots
-          path: cypress/frontend/cypress/screenshots/**

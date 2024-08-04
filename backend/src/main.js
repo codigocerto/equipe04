@@ -8,7 +8,7 @@ const resendMailController = require("./controllers/resendMailController");
 const updateNewsletterController = require("./controllers/updateNewsletterController");
 const deleteUserController = require("./controllers/deleteUserController");
 const corsOptions = {
-  origin: 'http://127.0.0.1:5500',
+  origin: 'https://equipe04.vercel.app/',
   optionsSuccessStatus: 200
 }
 
