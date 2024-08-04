@@ -13,6 +13,9 @@ const resendMailController = async (request, response) => {
   try {
     const user = await prisma.users.findUnique({
       where: { email },
+      include: {
+        UserInfos: true,
+      },
     });
 
     if (!user) {
@@ -20,7 +23,7 @@ const resendMailController = async (request, response) => {
     }
 
     let emailSubject, emailBody;
-    if (user.tipo === "mentor") {
+    if (user.UserInfos && user.UserInfos.mentor) {
       emailSubject = "Confirmação de Cadastro como Mentor";
       emailBody = emailTemplateMentor(user);
     } else {
