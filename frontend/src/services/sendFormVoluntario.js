@@ -2,6 +2,10 @@ const formVoluntario = document.getElementById('form-voluntario')
 formVoluntario.addEventListener('submit', async function(event) {
   event.preventDefault()
 
+  const modalMessageBody = document.getElementById('modalMessageBody');
+  const modalTitle = document.getElementById('messageModalLabel');
+  const btnModal = document.getElementById('btn-modal');
+
   const nome = document.getElementById('fullName').value.toLowerCase()
   const email = document.getElementById('email').value.toLowerCase()
   const telefone = document.getElementById('whatsapp').value
@@ -27,19 +31,25 @@ formVoluntario.addEventListener('submit', async function(event) {
   }
 
   try {
-    const fetchResponse = await fetch('https://equipe04-production.up.railway.app/cadastro', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(response)
-    });
+
+    let fetchResponse = false
+
+    if(linkedin != '') {
+      fetchResponse = await fetch('https://equipe04-production.up.railway.app/cadastro', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(response)
+      });
+    } else {
+      modalTitle.textContent = 'Linkedin não preenchido'
+      modalMessageBody.textContent = 'Preencha seu linkedin corretamente.'
+      modalTitle.classList.add('text-danger')
+      btnModal.classList.add('btn-danger')
+    }
 
     const result = await fetchResponse.json();
-
-    const modalMessageBody = document.getElementById('modalMessageBody');
-    const modalTitle = document.getElementById('messageModalLabel');
-    const btnModal = document.getElementById('btn-modal');
 
     if (fetchResponse.ok) {
       modalTitle.textContent = 'Sucesso'
@@ -47,14 +57,14 @@ formVoluntario.addEventListener('submit', async function(event) {
       modalTitle.classList.add('text-success')
       btnModal.classList.remove('btn-danger')
       btnModal.classList.add('btn-success')
-      modalMessageBody.textContent = result.message || 'Cadastro enviado com sucesso';
+      modalMessageBody.textContent = result.message || 'Cadastro enviado com sucesso.';
     } else {
       modalTitle.textContent = 'Tente Novamente'
       modalTitle.classList.remove('text-success')
       modalTitle.classList.add('text-danger')
       btnModal.classList.remove('btn-success')
       btnModal.classList.add('btn-danger')
-      modalMessageBody.textContent = result.error || 'Erro no envio do cadastro';
+      modalMessageBody.textContent = result.error || 'Erro no envio do cadastro.';
     }
 
     const messageModal = new bootstrap.Modal(document.getElementById('messageModal'));
@@ -63,7 +73,7 @@ formVoluntario.addEventListener('submit', async function(event) {
   } catch (error) {
     console.error(`Error: ${error}`);
     const modalMessageBody = document.getElementById('modalMessageBody');
-    modalMessageBody.textContent = 'Erro ao processar a requisição';
+    modalMessageBody.textContent = 'Erro ao processar a requisição.';
 
     const messageModal = new bootstrap.Modal(document.getElementById('messageModal'));
     messageModal.show();
