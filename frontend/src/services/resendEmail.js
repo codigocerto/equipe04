@@ -30,6 +30,9 @@ formResendEmail.addEventListener('submit', async function(event) {
       modalTitle.classList.add('text-success')
       btnModal.classList.remove('btn-danger')
       btnModal.classList.add('btn-success')
+      btnModal.addEventListener('click', function() {
+        window.location.href = "https://equipe04.vercel.app/"
+      })
       modalMessageBody.textContent = result.message || 'Cadastro enviado com sucesso';
       resendEmailModal.style.display = 'none'
     } else {
@@ -38,6 +41,9 @@ formResendEmail.addEventListener('submit', async function(event) {
       modalTitle.classList.add('text-danger')
       btnModal.classList.remove('btn-success')
       btnModal.classList.add('btn-danger')
+      btnModal.addEventListener('click', function() {
+        location.reload()
+      })
       modalMessageBody.textContent = result.error || 'Erro no envio do cadastro';
       resendEmailModal.style.display = 'none'
     }
