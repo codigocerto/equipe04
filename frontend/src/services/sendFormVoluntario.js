@@ -58,6 +58,7 @@ formVoluntario.addEventListener('submit', async function(event) {
       btnModal.classList.remove('btn-danger')
       btnModal.classList.add('btn-success')
       modalMessageBody.textContent = result.message || 'Cadastro enviado com sucesso.';
+      window.location.href = "./index.html"
     } else {
       modalTitle.textContent = 'Tente Novamente'
       modalTitle.classList.remove('text-success')
