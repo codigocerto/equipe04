@@ -17,6 +17,12 @@
   font-family: "Rubik", sans-serif;
 }
 
+body{
+
+  overflow-x: hidden;
+  
+  }
+
 .font-roboto {
   font-family: "Roboto", sans-serif;
 }
