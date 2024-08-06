@@ -57,8 +57,10 @@ formMentor.addEventListener('submit', async function(event) {
       modalTitle.classList.add('text-success')
       btnModal.classList.remove('btn-danger')
       btnModal.classList.add('btn-success')
+      btnModal.addEventListener('click', function() {
+        window.location.href = "https://equipe04.vercel.app/"
+      })
       modalMessageBody.textContent = result.message || 'Cadastro enviado com sucesso.';
-      window.location.href = "https://equipe04.vercel.app/"
     } else {
       modalTitle.textContent = 'Tente Novamente'
       modalTitle.classList.remove('text-success')
@@ -74,6 +76,7 @@ formMentor.addEventListener('submit', async function(event) {
   } catch (error) {
     console.error(`Error: ${error}`);
     const modalMessageBody = document.getElementById('modalMessageBody');
+    modalTitle.textContent = 'Erro no servidor.'
     modalMessageBody.textContent = 'Erro ao processar a requisição.';
 
     const messageModal = new bootstrap.Modal(document.getElementById('messageModal'));
