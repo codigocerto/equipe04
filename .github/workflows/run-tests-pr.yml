@@ -25,7 +25,7 @@ jobs:
         run: live-server --port=5500 --no-browser &
         
       - name: Install Cypress dependencies
-        run: npm install cypress
+        run: npm install
 
       - name: Run Cypress tests
         run: npx cypress run --spec "cypress/e2e/frontend/**/*"

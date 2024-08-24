@@ -4,3 +4,5 @@ backend/prisma/dev.db
 .DS_Store
 node_modules
 cypress/screenshots
+cypress/reports
+cypress/downloads
