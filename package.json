@@ -4,12 +4,16 @@
   "description": "<p align=\"center\">   <a href=\"https://git.io/typing-svg\">     <img src=\"https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=F70000&random=false&width=435&lines=Equipe de  +Desenvolvimento+%7C+  04\" alt=\"Typing SVG\">   </a> </p>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open:chrome": "npx cypress open --browser chrome",
+    "cy:run:chrome": "npx cypress run --browser chrome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.13.1"
+    "cypress": "^13.13.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-multi-reporters": "^1.6.4",
+    "mocha-junit-reporter": "^2.2.1"
   }
 }

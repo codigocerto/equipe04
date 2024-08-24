@@ -1,5 +1,5 @@
 describe('Lógica de envio de e-mails', () => {
-  const apiUrl = 'http://localhost:3000/cadastro'; // ajuste a URL para o endpoint da sua API
+  const apiUrl = 'http://127.0.0.1:3000/cadastro'; // ajuste a URL para o endpoint da sua API
 
   it('Verifica se o usuário já está cadastrado', () => {
     cy.intercept('POST', apiUrl, {
@@ -10,14 +10,14 @@ describe('Lógica de envio de e-mails', () => {
     const user = {
       nome: 'teste joao',
       email: 'joao.teste@example.com',
+      telefone: '(99) 99999-9999',
       pais: 'Brasil',
       funcaoPretendida: 'desenvolvedor full-stack',
       disponibilidade: 'dia todo',
-      senioridade: 'Junior',
       linkedin: 'https://linkedin.com/in/joaoteste',
       liderar: false,
-      experiencia: 2,
-      newsletter: false,
+      tipo: true,
+      experiencia: "menos de 1 ano",
     };
 
     cy.request({
