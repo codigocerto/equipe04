@@ -1,6 +1,6 @@
 describe('Componente Accordion', () => {
   beforeEach(() => {
-    cy.visit('http://127.0.0.1:5500/frontend')
+    cy.visit('http://127.0.0.1:5500/frontend/')
   })
 
   it('Verifica se o accordion foi renderizado', () => {
